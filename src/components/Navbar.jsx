@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -11,10 +11,10 @@ const Navbar = () => {
   return (
     <nav className='navbar fixed top-0 left-0 w-full text-white py-4 px-6 lg:px-12 z-50 bg-gray-900'>
       <div className='container mx-auto flex justify-between items-center'>
-        <a href="#home" className='headtitle text-2xl font-bold'>Mon Portfolio</a>
+        <a href="#home" className='headtitle text-3xl font-bold'>Mon Portfolio</a>
 
         {/* Menu pour les grands écrans */}
-        <div className="hidden md:flex text-lg">
+        <div className="hidden md:flex text-xl">
           <a href="#about" className="hover:underline">About</a>
           <a href="#skills" className='ml-4 hover:underline'>Skills</a>
           <a href="#projects" className='ml-4 hover:underline'>Projects</a>

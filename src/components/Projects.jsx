@@ -1,7 +1,5 @@
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
@@ -18,27 +16,27 @@ export default function Projects() {
     <section id="projects" className="project w-full h-auto flex flex-col lg:flex-row">
       {/* Description des projets */}
       <div className="w-full lg:w-1/2 p-5">
-        <h1 className="title text-center text-white text-3xl mb-5 font-semibold">Mes Projets</h1>
-        <div className="project-description">
+        <h1 className="title text-center text-white text-4xl mb-5 font-semibold">Mes Projets</h1>
+        <div className="project-description text-xl">
 
-          <div className="card py-3 mb-4 rounded-lg">
-            <h2 className="text-xl font-semibold mb-2 text-gray-100">Craftify</h2>
+          <div className="py-3 mb-4 rounded-lg">
+            <p className="text-2xl font-semibold mb-2 text-gray-100">Craftify</p>
             <p className="mb-4 text-gray-300">Un site de e-commerce réalisé en équipe, utilisant React et Vite pour le développement front-end. Le projet met en avant des fonctionnalités avancées telles que la gestion de panier, les filtres de produits, etc.</p>
             <a href="https://craftify-project.myportfolio.com/" target="_blank" className='text-slate-600 hover:text-slate-50 duration-300'>Portfolio du projet</a>
           </div>
 
-          <div className="card py-3 mb-4 rounded-lg">
-            <h2 className="text-xl font-semibold mb-2 text-gray-100">Rawg</h2>
+          <div className="py-3 mb-4 rounded-lg">
+            <p className="text-2xl font-semibold mb-2 text-gray-100">Rawg</p>
             <p className="mb-4 text-gray-300">Une plateforme dédiée aux jeux vidéo, développée avec React et Vite. Elle propose une base de données riche en informations, des critiques de jeux, et des recommandations personnalisées pour les utilisateurs.</p>
           </div>
 
-          <div className="card py-3 mb-4 rounded-lg">
-            <h2 className="text-xl font-semibold mb-2 text-gray-100">Headphones</h2>
-            <p className="mb-4 text-gray-300">Un site web de présentation de casques audio, créé en utilisant HTML, CSS, et JavaScript. Le design est moderne et épuré, avec une attention particulière portée à l'expérience utilisateur et à la réactivité.</p>
+          <div className="py-3 mb-4 rounded-lg">
+            <p className="text-2xl font-semibold mb-2 text-gray-100">Headphones</p>
+            <p className="mb-4 text-gray-300">Un site web de présentation de casques audio, créé en utilisant HTML, CSS, et JavaScript. Le design est moderne et épuré, avec une attention particulière portée à l&apos;expérience utilisateur et à la réactivité.</p>
           </div>
 
-          <div className="card py-3 mb-4 rounded-lg">
-            <h2 className="text-xl font-semibold mb-2 text-gray-100">Sofa4Rent</h2>
+          <div className="py-3 mb-4 rounded-lg">
+            <p className="text-2xl font-semibold mb-2 text-gray-100">Sofa4Rent</p>
             <p className="mb-4 text-gray-300">Un site de location de sofas, développé avec HTML et CSS. Il se distingue par son interface utilisateur conviviale et ses fonctionnalités intuitives permettant une navigation facile et rapide.</p>
           </div>
 

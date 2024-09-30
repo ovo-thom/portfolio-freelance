@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const About = () => {
@@ -21,17 +20,17 @@ const About = () => {
             />
           </motion.div>
           <div className="md:w-2/3 w-full p-4">
-            <div className="text-lg md:text-base leading-relaxed text-gray-300 mb-8">
+            <div className="text-base md:text-2xl leading-relaxed text-gray-300 mb-8">
               <p>
-                Actuellement en formation chez BeCode, j'ai acquis des compétences solides en développement web front-end grâce à une pédagogie active et des travaux de groupe. Je vous propose ma candidature pour un stage de développeur web front-end de trois mois à partir de septembre.
+                Actuellement en formation chez BeCode, j&apos;ai acquis des compétences solides en développement web front-end grâce à une pédagogie active et des travaux de groupe. Je vous propose ma candidature pour un stage de développeur web front-end de trois mois à partir de septembre.
               </p>
               <hr className="my-4 border-gray-700"/>
               <p>
-                Maîtrisant HTML, CSS et JavaScript, je suis particulièrement motivé à renforcer mes compétences en React au sein de votre équipe. Mon parcours de reconversion professionnelle témoigne de ma détermination et de ma capacité à m'adapter rapidement à de nouveaux environnements.
+                Maîtrisant HTML, CSS et JavaScript, je suis particulièrement motivé à renforcer mes compétences en React au sein de votre équipe. Mon parcours de reconversion professionnelle témoigne de ma détermination et de ma capacité à m&apos;adapter rapidement à de nouveaux environnements.
               </p>
               <hr className="my-4 border-gray-700"/>
               <p>
-                Chez BeCode, j'ai appris à travailler en équipe et à gérer des projets avec rigueur. Curieux et avide d'apprendre, je cherche constamment de nouveaux défis pour élargir mes compétences.
+                Chez BeCode, j&apos;ai appris à travailler en équipe et à gérer des projets avec rigueur. Curieux et avide d&apos;apprendre, je cherche constamment de nouveaux défis pour élargir mes compétences.
               </p>
             </div>
           </div>
