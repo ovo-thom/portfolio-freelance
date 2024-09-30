@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Trad:wght@100..400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+.navbar{
+  background-color: rgba(0, 0, 0, 0.512);
+}
+
+
+.project {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.project::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,1,24,1) 0%, rgba(10,16,60,1) 0%, rgba(13,12,12,1) 24%, rgba(9,6,6,1) 71%, rgba(13,9,63,1) 100%);
+  background-position: center;
+  background-size: cover;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.project .content {
+  position: relative;
+  z-index: 1;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #cfe2db;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  color: #506abc;
+}
+
+.swiper-button-next:after {
+  margin-left: 25px;
+}
+
+.swiper-button-prev:after {
+  margin-right: 25px;
+}
+
+
+.img-section {
+  background-image: url('../public/images/plume-hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.background-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,1,24,1) 0%, rgba(10,16,60,1) 0%, rgba(13,12,12,1) 24%, rgba(9,6,6,1) 71%, rgba(13,9,63,1) 100%);
+  filter: brightness(50%);
+  z-index: -1; 
+}
+
+
+.sectionskills {
+  position: relative;
+  z-index: 10;
+  width: 80%;
+}
+
+
+@keyframes hueRotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.title {
+  /* font-family: 'Kaushan Script'; */
+  font-family: "Shantell Sans", cursive;
+  letter-spacing: 4px;
+}
+
+.hue-rotate {
+  animation: hueRotate 10s infinite linear;
+}
+
+/* .skills-section {
+  position: relative;
+  z-index: 0; 
+}
+
+.skills-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://img.freepik.com/photos-gratuite/belle-arrangement-plumes_23-2151436589.jpg?t=st=1722933444~exp=1722937044~hmac=28a914dc0fe7929165d12a02e4176abdefc5e442898d352a6844b8663ccec274&w=826');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(10%);
+  z-index: -1;
+} */
+
+.card:not(:last-child) {
+  background: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.568);
+}
+
+/* .contact {
+  position: relative;
+  z-index: 1;
+} */
+
+/* form {
+  box-shadow: 0 1px 5px 0 white;
+} */
+
+.contactform {
+  font-family: 'Playfair Display';
+}
+
+.arrow {
+  font-size: 24px;
+  color: rgb(215, 215, 79);
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
