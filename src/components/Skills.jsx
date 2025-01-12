@@ -1,10 +1,8 @@
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import {Autoplay, Pagination, Navigation } from 'swiper/modules';
-// import Particles from 'react-tsparticles';
 
 
 import htmlLogo from '../assets/html.png';
@@ -13,7 +11,7 @@ import javascriptLogo from '../assets/javascript.png';
 import reactLogo from '../assets/react.png';
 import tailwindLogo from '../assets/tailwind.png';
 import sassLogo from '../assets/sass.png';
-import nodejsLogo from '../assets/nodejs.png';
+import nextjsLogo from '../assets/nextjs.png';
 import gitLogo from '../assets/git.png';
 import figmaLogo from '../assets/figma.png';
 
@@ -25,11 +23,10 @@ const skills = [
   { name: "React", image: reactLogo },
   { name: "Tailwind CSS", image: tailwindLogo },
   { name: "Sass", image: sassLogo },
-  { name: "Nodejs", image: nodejsLogo },
+  { name: "Nextjs", image: nextjsLogo },
   { name: "Git", image: gitLogo },
   { name: "Figma", image: figmaLogo }
 ];
-
 
 
 const Skills = () => {
@@ -80,39 +77,3 @@ const Skills = () => {
 
 export default Skills;
 
-
-
-
-// import React from 'react';
-// import htmlLogo from '../assets/html.png';
-// import cssLogo from '../assets/css.png';
-// import javascriptLogo from '../assets/javascript.png';
-// import reactLogo from '../assets/react.png';
-// import tailwindLogo from '../assets/tailwind.png';
-
-// const skills = [
-//   { name: "HTML", image: htmlLogo },
-//   { name: "CSS", image: cssLogo },
-//   { name: "JavaScript", image: javascriptLogo },
-//   { name: "React", image: reactLogo },
-//   { name: "Tailwind CSS", image: tailwindLogo }
-// ];
-
-// const Skills = () => {
-//   return (
-//     <section id="skills" className="py-20 bg-gray-100">
-//       <div className="container mx-auto">
-//         <h2 className="text-4xl font-bold text-center mb-10">Skills</h2>
-//         <div className="flex flex-wrap justify-center">
-//           {skills.map((skill, index) => (
-//             <div key={index} className="m-4 p-4 bg-white rounded shadow-md w-30 text-center flex items-center justify-center">
-//               <img src={skill.image} alt={skill.name} className="w-14 h-14" />
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default Skills;

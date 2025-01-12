@@ -4,10 +4,10 @@ import 'swiper/css';
 import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
 
-import craftifyHome from '../../public/images/craftify-home.png';
-import rawg from '../../public/images/rawg.png';
-import headphones from '../../public/images/Headphones.png';
-import sofa from '../../public/images/Sofa.png';
+import craftifyHome from '../images/craftify-home.png';
+import rawg from '../images/rawg.png';
+import headphones from '../images/Headphones.png';
+import sofa from '../images/Sofa.png';
 
 import { EffectCube, Pagination } from 'swiper/modules';
 
