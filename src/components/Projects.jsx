@@ -8,6 +8,7 @@ import craftifyHome from '../images/craftify-home.png';
 import rawg from '../images/rawg.png';
 import headphones from '../images/Headphones.png';
 import sofa from '../images/Sofa.png';
+import lifestyle from '../images/lifestyle.png';
 
 import { EffectCube, Pagination } from 'swiper/modules';
 
@@ -26,8 +27,8 @@ export default function Projects() {
           </div>
 
           <div className="py-3 mb-4 rounded-lg">
-            <p className="text-2xl font-semibold mb-2 text-gray-100">Rawg</p>
-            <p className="mb-4 text-gray-300">Une plateforme dédiée aux jeux vidéo, développée avec React et Vite. Elle propose une base de données riche en informations, des critiques de jeux, et des recommandations personnalisées pour les utilisateurs.</p>
+            <p className="text-2xl font-semibold mb-2 text-gray-100">LifeStyle Fitness</p>
+            <p className="mb-4 text-gray-300">LifeStyle Fitness est une page réalisée à partir d'une maquette Figma, développée avec Next.js et Tailwind CSS, responsive sur desktop et mobile. Un formulaire a également été intégré pour permettre aux utilisateurs d'obtenir un pass gratuit.</p>
           </div>
 
           <div className="py-3 mb-4 rounded-lg">
@@ -68,7 +69,7 @@ export default function Projects() {
             <img src={craftifyHome} alt="Craftify Home" className="object-cover w-full h-full" />
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center w-full h-full">
-            <img src={rawg} alt="Rawg" className="object-cover w-full h-full" />
+            <img src={lifestyle} alt="lifestyle" className="object-cover w-full h-full" />
           </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center w-full h-full">
             <img src={headphones} alt="Headphones" className="object-cover w-full h-full" />
