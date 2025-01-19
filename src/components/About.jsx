@@ -17,11 +17,11 @@ const About = () => {
             <img
               src={codingnight}
               alt="About me"
-              className="rounded-full mx-auto w-[90%] shadow-lg lg:min-h-96 lg:min-w-72"
+              className="rounded-full mx-auto w-[90%] h-72 shadow-lg lg:min-h-96 lg:min-w-72"
             />
           </motion.div>
           <div className="md:w-full w-full p-4">
-            <div className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-300 mb-8">
+            <div className="text-base w-[90%] mx-auto md:text-lg lg:text-xl leading-relaxed text-gray-300 mb-8">
               <p>
               Diplômé de BeCode, j&apos;ai acquis des compétences en développement web front-end, notamment en React, Next.js, Tailwind CSS et TypeScript. Lors de mon stage chez Pixel Drive, j&apos;ai travaillé sur des Progressive Web Apps et utilisé des concepts avancés comme les server components et server actions.
               </p>

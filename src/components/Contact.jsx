@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
@@ -7,7 +8,7 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row p-8 space-y-6">
           <div className="contact-left lg:w-1/2 lg:border-r border-b ">
             <div className="lets-connect w-full p-4">
-              <h2 className="title text-center text-blue-900 text-2xl sm:text-3xl lg:text-4xl mb-10 font-semibold">
+              <h2 className="title text-center text-blue-900 text-2xl sm:text-3xl lg:text-4xl mb-5 md:mb-10 font-semibold">
                 Let&apos;s Connect
               </h2>
               <p className="text-gray-300 lg:text-xl">
@@ -21,12 +22,12 @@ const Contact = () => {
                   J&apos;ai hâte de contribuer à votre succès tout en
                   développant mes compétences.
                 </span>
-                <div className="flex space-x-6 justify-center mt-3">
+                <div className="flex space-x-6 justify-center mt-7 md:mt-12">
                   <a
                     href="https://github.com/ovo-thom"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-900 hover:text-gray-500"
+                    className="text-blue-900 hover:text-gray-500 duration-200"
                   >
                     <FaGithub size={40} />
                   </a>
@@ -34,57 +35,16 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/thomas-thonnard-a520b72b5"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-900 hover:text-gray-500"
+                    className="text-blue-900 hover:text-gray-500 duration-200"
                   >
                     <FaLinkedin size={40} />
-                  </a>
-                  <a
-                    href="mailto:thonnard.thomas@gmail.com"
-                    className="text-blue-900 hover:text-gray-500"
-                  >
-                    <FaEnvelope size={40} />
                   </a>
                 </div>
               </p>
             </div>
           </div>
           <div className="lg:w-1/2">
-            <form
-              action="https://formspree.io/f/xnnnkvwa"
-              method="POST"
-              className="mx-auto py-4 px-8 border border-slate-500 sm:max-w-[70%] lg:w-3/4 rounded-xl"
-            >
-              <div className="mb-4">
-                <label htmlFor="nom" className="block text-lg">
-                  Votre nom
-                </label>
-                <input type="text" name="name" className="w-full p-1" placeholder="John" required/>
-              </div>
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-lg">
-                  Votre email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  className="w-full p-1"
-                  placeholder="johndoe@gmail.com"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label htmlFor="nom" className="block text-lg">
-                  Votre message
-                </label>
-                <textarea
-                  name="message"
-                  placeholder="Ecrivez votre message"
-                  className="w-full h-28 resize-none p-1"
-                  required
-                ></textarea>
-                <button type="submit" className="block mx-auto border border-blue-900 px-6 py-1 rounded-md mt-3">Send</button>
-              </div>
-            </form>
+            <ContactForm />
           </div>
         </div>
         <p className="w-[70%] mx-auto text-center text-sm sm:text-lg md:text-xl lg:text-base text-gray-400 pb-8">
