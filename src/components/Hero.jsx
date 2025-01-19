@@ -8,7 +8,7 @@ const Hero = () => {
         <Navbar />
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-center md:text-left p-4 mx-8">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl mb-4 sm:mb-6 md:mb-8 font-semibold">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 md:mb-8 font-semibold">
               Bonjour, je suis{' '}
               <Typewriter
                 options={{

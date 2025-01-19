@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className='navbar fixed top-0 left-0 w-full text-white py-4 px-6 lg:px-12 z-50 bg-gray-900'>
       <div className='container mx-auto flex justify-between items-center'>
-        <a href="#home" className='headtitle text-3xl font-bold'>Mon Portfolio</a>
+        <a href="#home" className='headtitle text-3xl font-bold text-white'>Mon Portfolio</a>
 
         {/* Menu pour les grands écrans */}
         <div className="hidden md:flex text-xl">

@@ -1,43 +1,111 @@
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   return (
     <div id="contact">
       <section className="contact-section bg-black text-white">
-        <div className="container flex flex-col md:flex-row p-12 space-y-6">
-          <div className="contact-left lg:w-1/2 lg:border-r border-b">
-          <div className="lets-connect w-full p-4">
-            <h2 className="title text-center text-white text-4xl mb-10 font-semibold">Let&apos;s Connect</h2>
-            <p className="text-gray-300 text-xl">
-            Je suis enthousiaste à l&apos;idée de mettre en pratique mes compétences et de les perfectionner au sein d&apos;une équipe dynamique. Si vous recherchez un stagiaire motivé, prêt à s&apos;investir pleinement et à apprendre, je serais ravi de discuter avec vous. N&apos;hésitez pas à me contacter via le formulaire ou à l&apos;adresse thonnard.thomas@gmail.com. J&apos;ai hâte de contribuer à vos projets tout en développant mes compétences.
-            </p>
+        <div className="flex flex-col lg:flex-row p-8 space-y-6">
+          <div className="contact-left lg:w-1/2 lg:border-r border-b ">
+            <div className="lets-connect w-full p-4">
+              <h2 className="title text-center text-blue-900 text-2xl sm:text-3xl lg:text-4xl mb-10 font-semibold">
+                Let&apos;s Connect
+              </h2>
+              <p className="text-gray-300 lg:text-xl">
+                Développeur web front-end junior passionné par la création
+                d&apos;interfaces modernes avec React et Tailwind CSS, je suis
+                motivé et prêt à relever de nouveaux défis.{" "}
+                <span className="block mt-4">
+                  {" "}
+                  Si vous cherchez un collaborateur engagé pour enrichir vos
+                  projets, n&apos;hésitez pas à me contacter via le formulaire.
+                  J&apos;ai hâte de contribuer à votre succès tout en
+                  développant mes compétences.
+                </span>
+                <div className="flex space-x-6 justify-center mt-3">
+                  <a
+                    href="https://github.com/ovo-thom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-900 hover:text-gray-500"
+                  >
+                    <FaGithub size={40} />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/thomas-thonnard-a520b72b5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-900 hover:text-gray-500"
+                  >
+                    <FaLinkedin size={40} />
+                  </a>
+                  <a
+                    href="mailto:thonnard.thomas@gmail.com"
+                    className="text-blue-900 hover:text-gray-500"
+                  >
+                    <FaEnvelope size={40} />
+                  </a>
+                </div>
+              </p>
             </div>
           </div>
-          <div className="contact-right md:w-1/2">
-            <form action="" className=" mx-auto p-8 border border-slate-500 w-3/4 rounded-lg">
+          <div className="lg:w-1/2">
+            <form
+              action="https://formspree.io/f/xnnnkvwa"
+              method="POST"
+              className="mx-auto py-4 px-8 border border-slate-500 sm:max-w-[70%] lg:w-3/4 rounded-xl"
+            >
               <div className="mb-4">
-                <label htmlFor="nom" className="block text-lg">Votre nom</label>
-                <input type="text" className="w-full p-1" placeholder="John"/>
+                <label htmlFor="nom" className="block text-lg">
+                  Votre nom
+                </label>
+                <input type="text" name="name" className="w-full p-1" placeholder="John" required/>
               </div>
               <div className="mb-4">
-                <label htmlFor="email" className="block text-lg">Votre email</label>
-                <input type="text" className="w-full p-1" placeholder="johndoe@gmail.com"/>
+                <label htmlFor="email" className="block text-lg">
+                  Votre email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  className="w-full p-1"
+                  placeholder="johndoe@gmail.com"
+                  required
+                />
               </div>
               <div className="mb-4">
-                <label htmlFor="nom" className="block text-lg">Votre message</label>
+                <label htmlFor="nom" className="block text-lg">
+                  Votre message
+                </label>
                 <textarea
-                  name=""
-                  id=""
+                  name="message"
                   placeholder="Ecrivez votre message"
                   className="w-full h-28 resize-none p-1"
+                  required
                 ></textarea>
+                <button type="submit" className="block mx-auto border border-blue-900 px-6 py-1 rounded-md mt-3">Send</button>
               </div>
             </form>
           </div>
         </div>
+        <p className="w-[70%] mx-auto text-center text-sm sm:text-lg md:text-xl lg:text-base text-gray-400 pb-8">
+          Je suis éligible au{" "}
+          <strong className="text-blue-800 underline">plan PFI</strong> du Forem, un
+          programme permettant à l&apos;employeur de bénéficier d&apos;un
+          soutien financier tout en formant le candidat selon ses besoins. Pour
+          plus d&apos;informations, consultez le site du{" "}
+          <a
+            href="https://www.leforem.be/entreprises/aides-financieres-plan-formation-insertion.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 underline hover:text-blue-400"
+          >
+            Forem
+          </a>
+          .
+        </p>
       </section>
     </div>
   );
 };
 
 export default Contact;
-
