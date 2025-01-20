@@ -1,11 +1,9 @@
 import Typewriter from 'typewriter-effect';
 import profileImage from '../assets/futurprofil.jpg';
-import Navbar from './Navbar'; 
 
 const Hero = () => {
     return (
      <section id="home" className="img-section text-white h-screen flex items-center hue-rotate">
-        <Navbar />
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-center md:text-left p-4 mx-8">
             <h1 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 md:mb-8 font-semibold">

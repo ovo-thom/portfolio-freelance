@@ -47,7 +47,7 @@ const Contact = () => {
             <ContactForm />
           </div>
         </div>
-        <p className="w-[70%] mx-auto text-center text-sm sm:text-lg md:text-xl lg:text-base text-gray-400 pb-8">
+        <p className="w-[70%] mx-auto text-center text-sm sm:text-lg md:text-xl lg:text-base text-gray-400 py-8">
           Je suis éligible au{" "}
           <strong className="text-blue-800 underline">plan PFI</strong> du Forem, un
           programme permettant à l&apos;employeur de bénéficier d&apos;un

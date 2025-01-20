@@ -3,7 +3,7 @@ import codingnight from '../images/codingnight.avif';
 
 const About = () => {
   return (
-    <section id="about" className="about-section w-full h-auto py-20 bg-black text-white">
+    <section id="about" className="about-section w-full h-auto py-9 md:py-20 bg-black text-white">
       <div className="w-full px-2">
         <h2 className="title text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-10 text-blue-900">À propos de moi</h2>
         <div className="flex flex-col lg:flex-row items-center">
