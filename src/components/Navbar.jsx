@@ -71,7 +71,7 @@ const Navbar = () => {
 
       {/* Menu burger pour les petits écrans */}
       {isOpen && (
-        <div className="md:hidden bg-gray-800 absolute top-full left-0 w-full flex flex-col items-center text-lg py-4">
+        <div className="md:hidden bg-black absolute top-full left-0 w-full flex flex-col items-center text-lg py-4">
           <a
             href="#about"
             onClick={toggleMenu}

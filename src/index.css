@@ -28,7 +28,7 @@ body {
 background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,1,24,1) 0%, rgba(10,16,60,1) 0%, rgba(13,12,12,1) 24%, rgba(9,6,6,1) 71%, rgba(13,9,63,1) 100%);
   background-position: center;
   background-size: cover;
-  filter: brightness(50%);
+  filter: brightness(60%);
   z-index: -1;
 }
 
@@ -92,7 +92,6 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,1,24,1) 0%, rgba(10,
 }
 
 .title {
-  /* font-family: 'Kaushan Script'; */
   font-family: "Shantell Sans", cursive;
   letter-spacing: 4px;
 }

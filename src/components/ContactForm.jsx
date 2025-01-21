@@ -30,7 +30,7 @@ export default function ContactForm() {
     <>
       <form
         onSubmit={handleSubmit}
-        className="mx-auto py-4 px-8 border border-slate-500 sm:max-w-[70%] lg:w-3/4 rounded-xl"
+        className="mx-auto py-4 px-8 border border-slate-800 sm:max-w-[70%] lg:w-3/4 rounded-xl"
       >
         <FaEnvelope size={40} className="text-blue-900 block mx-auto" />
         <div className="mb-4">
@@ -40,7 +40,7 @@ export default function ContactForm() {
           <input
             type="text"
             name="name"
-            className="w-full p-1 rounded-lg text-black"
+            className="w-full p-1 rounded-lg text-black outline-none border border-gray-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900"
             placeholder="John"
             required
           />
@@ -52,7 +52,7 @@ export default function ContactForm() {
           <input
             type="email"
             name="email"
-            className="w-full p-1 rounded-lg text-black"
+            className="w-full p-1 rounded-lg text-black border-gray-300 outline-none focus:border-blue-900 focus:ring-2 focus:ring-blue-900"
             placeholder="johndoe@gmail.com"
             required
           />
@@ -64,7 +64,7 @@ export default function ContactForm() {
           <textarea
             name="message"
             placeholder="Ecrivez votre message"
-            className="w-full h-28 resize-none p-1 rounded-lg text-black"
+            className="w-full h-28 resize-none p-1 rounded-lg text-black outline-none focus:border-blue-900 focus:ring-2 focus:ring-blue-900"
             required
           ></textarea>
           <button

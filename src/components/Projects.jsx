@@ -19,18 +19,18 @@ export default function Projects() {
         <div className="project-description text-xl">
 
           <div className="py-3 mb-4 rounded-lg">
-            <p className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">Craftify</p>
+            <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">Craftify</h3>
             <p className="mb-4 text-gray-300 text-base">Un site de e-commerce réalisé en équipe, utilisant React et Vite pour le développement front-end. Le projet met en avant des fonctionnalités avancées telles que la gestion de panier, les filtres de produits, etc.</p>
             <a href="https://craftify-project.myportfolio.com/" target="_blank" className='text-slate-600 hover:text-slate-50 duration-300'>Portfolio du projet</a>
           </div>
 
           <div className="py-3 mb-4 rounded-lg">
-            <p className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">LifeStyle Fitness</p>
+            <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">LifeStyle Fitness</h3>
             <p className="mb-4 text-gray-300 text-base">LifeStyle Fitness est une page réalisée à partir d&apos;une maquette Figma, développée avec Next.js et Tailwind CSS, responsive sur desktop et mobile. Un formulaire a également été intégré pour permettre aux utilisateurs d&apos;obtenir un pass gratuit.</p>
           </div>
 
           <div className="py-3 mb-4 rounded-lg">
-            <p className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">Headphones</p>
+            <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">Headphones</h3>
             <p className="mb-4 text-gray-300 text-base">Un site web de présentation de casques audio, créé en utilisant HTML, CSS, et JavaScript. Le design est moderne et épuré, avec une attention particulière portée à l&apos;expérience utilisateur et à la réactivité.</p>
           </div>
 
@@ -61,7 +61,7 @@ export default function Projects() {
           }}
           pagination={true}
           modules={[EffectCube, Pagination]}
-          className="mySwiper w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] max-w-[90%] md:max-w-[80%] lg:max-w-[70%]"
+          className="mySwiper w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh] xl:h-[90vh] max-w-[70%] md:max-w-[70%] lg:max-w-[70%]"
         >
           <SwiperSlide className="flex justify-center items-center w-full h-full">
             <img src={craftifyHome} alt="Craftify Home" className="object-cover w-full h-full" />
