@@ -3,16 +3,16 @@ import codingnight from '../images/codingnight.avif';
 
 const About = () => {
   return (
-    <section id="about" className="about-section w-full h-auto py-9 md:py-20 bg-gray-950  text-white">
+    <section id="about" className="about-section w-full h-auto py-9 md:py-20 bg-[#080808]  text-white">
       <div className="w-full px-2">
-        <h2 className="title text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-10 text-blue-900">À propos de moi</h2>
+        <h2 className="title text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-10 text-blue-900">About me</h2>
         <div className="flex flex-col lg:flex-row items-center">
           <motion.div
             className=""
             initial={{ x: '-100%', opacity: 0 }} 
             whileInView={{ x: 0, opacity: 1 }} 
             viewport={{ once: true }} 
-            transition={{ duration: 1.3, ease: 'easeOut' }} 
+            transition={{ duration: 1.8, ease: 'easeOut' }} 
           >
             <img
               src={codingnight}

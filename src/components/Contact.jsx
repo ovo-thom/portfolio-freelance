@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
   return (
     <div id="contact">
-      <section className="contact-section bg-black text-white">
+      <section className="contact-section bg-[#080808] text-white">
         <div className="flex flex-col lg:flex-row pt-8 px-8 space-y-6">
           <div className="contact-left lg:w-1/2 lg:border-r border-b ">
             <div className="lets-connect w-full p-4">
@@ -47,7 +47,7 @@ const Contact = () => {
             <ContactForm />
           </div>
         </div>
-        <p className="w-[70%] mx-auto text-center text-sm sm:text-lg md:text-xl lg:text-base text-gray-400 py-8">
+        <p className="w-[90%] lg:w-[70%] mx-auto text-center text-sm sm:text-base md:text-xl  text-gray-400 py-8 lg:py-20">
           Je suis éligible au{" "}
           <strong className="text-blue-800 underline">plan PFI</strong> du Forem, un
           programme permettant à l&apos;employeur de bénéficier d&apos;un
