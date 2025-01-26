@@ -32,7 +32,7 @@ export default function ContactForm() {
         onSubmit={handleSubmit}
         className="mx-auto py-4 px-8 border border-slate-800 sm:max-w-[70%] lg:w-3/4 rounded-xl"
       >
-        <FaEnvelope size={40} className="text-blue-900 block mx-auto" />
+        <FaEnvelope size={40} className="text-blue-500 block mx-auto" />
         <div className="mb-4">
           <label htmlFor="nom" className="block text-lg">
             Votre nom

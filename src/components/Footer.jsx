@@ -10,7 +10,7 @@ export default function Footer() {
           href="https://www.netlify.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-700 hover:underline font-semibold"
+          className="text-blue-500 hover:underline font-semibold "
         >
           Netlify
         </a>

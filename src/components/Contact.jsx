@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row pt-8 px-8 space-y-6">
           <div className="contact-left lg:w-1/2 lg:border-r border-b ">
             <div className="lets-connect w-full p-4">
-              <h2 className="title text-center text-blue-900 text-2xl sm:text-3xl lg:text-4xl mb-5 md:mb-10 font-semibold">
+              <h2 className="font-pixelify text-center text-blue-900 text-2xl sm:text-3xl lg:text-5xl mb-5 md:mb-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
                 Let&apos;s Connect
               </h2>
               <p className="text-gray-300 lg:text-xl">
@@ -27,7 +27,7 @@ const Contact = () => {
                     href="https://github.com/ovo-thom"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-900 hover:text-gray-500 duration-200"
+                    className="text-blue-500 hover:text-purple-500 duration-200"
                   >
                     <FaGithub size={40} />
                   </a>
@@ -35,7 +35,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/thomas-thonnard-a520b72b5"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-900 hover:text-gray-500 duration-200"
+                    className="text-blue-500 hover:text-purple-500 duration-200"
                   >
                     <FaLinkedin size={40} />
                   </a>
@@ -49,7 +49,7 @@ const Contact = () => {
         </div>
         <p className="w-[90%] lg:w-[70%] mx-auto text-center text-sm sm:text-base md:text-xl  text-gray-400 py-8 lg:py-20">
           Je suis éligible au{" "}
-          <strong className="text-blue-800 underline">plan PFI</strong> du Forem, un
+          <strong className="text-blue-500 underline">plan PFI</strong> du Forem, un
           programme permettant à l&apos;employeur de bénéficier d&apos;un
           soutien financier tout en formant le candidat selon ses besoins. Pour
           plus d&apos;informations, consultez le site du{" "}

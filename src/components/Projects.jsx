@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <section id="projects" className="project w-full h-auto flex flex-col lg:flex-row">
       <div className="w-full lg:w-1/2 p-5">
-        <h1 className="title text-center text-blue-900 text-2xl sm:text-3xl lg:text-4xl mb-5 font-semibold">My Projects</h1>
+        <h1 className="font-pixelify text-center text-2xl sm:text-3xl lg:text-5xl mb-5 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">My Projects</h1>
         <div className="project-description text-xl">
 
           <div className="py-3 mb-4 rounded-lg">
