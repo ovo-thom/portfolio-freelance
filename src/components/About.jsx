@@ -29,7 +29,7 @@ const About = () => {
           </motion.div>
           <div className="md:w-full w-full p-4">
             <div className="text-base w-[90%] mx-auto md:text-lg lg:text-xl leading-relaxed mb-8">
-              <h3 className="text-lg sm:text-xl md:text-2xl mb-2 font-semibold">
+              <h3 className="text-lg sm:text-xl md:text-2xl mb-2 font-semibold text-gray-100">
                 Objectif professionnel
               </h3>
               <p className="text-gray-300 text-base">
@@ -39,7 +39,7 @@ const About = () => {
                 évoluer dans un environnement dynamique.
               </p>
               <hr className="my-4 border-gray-700" />
-              <h3 className="text-lg sm:text-xl md:text-2xl mb-2 font-semibold">
+              <h3 className="text-lg sm:text-xl md:text-2xl mb-2 font-semibold text-gray-100">
                 Compétences et formation
               </h3>
               <p className="text-gray-300 text-base">
@@ -50,7 +50,7 @@ const About = () => {
                 intégrant des fonctionnalités modernes et responsive.
               </p>
               <hr className="my-4 border-gray-700" />
-              <h3 className="text-lg sm:text-xl md:text-2xl mb-2 font-semibold">
+              <h3 className="text-lg sm:text-xl md:text-2xl mb-2 font-semibold text-gray-100">
                 Expérience professionnelle
               </h3>
               <p className="text-gray-300 text-base">

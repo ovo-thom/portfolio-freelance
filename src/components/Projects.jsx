@@ -13,10 +13,10 @@ import { EffectCube, Pagination } from 'swiper/modules';
 
 export default function Projects() {
   return (
-    <section id="projects" className="project w-full h-auto flex flex-col lg:flex-row">
-      <div className="w-full lg:w-1/2 p-5">
+    <section id="projects" className="project w-full h-auto">
         <h1 className="font-pixelify text-center text-2xl sm:text-3xl lg:text-5xl mb-5 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">My Projects</h1>
-        <div className="project-description text-xl">
+      <div className="w-full p-5 flex flex-col lg:flex-row">
+        <div className="project-description text-xl lg:w-1/2">
 
           <div className="py-3 mb-4 rounded-lg">
             <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">Craftify</h3>
@@ -39,7 +39,7 @@ export default function Projects() {
             <p className="mb-4 text-gray-300 text-base">Un site de location de sofas, développé avec HTML et CSS. Il se distingue par son interface utilisateur conviviale et ses fonctionnalités intuitives permettant une navigation facile et rapide.</p>
           </div>
 
-        </div>
+        
       </div>
 
       {/* Slider des images */}
@@ -61,7 +61,7 @@ export default function Projects() {
           }}
           pagination={true}
           modules={[EffectCube, Pagination]}
-          className="mySwiper w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh] xl:h-[90vh] max-w-[70%] md:max-w-[70%] lg:max-w-[70%]"
+          className="mySwiper w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh] xl:h-[82vh] max-w-[70%] md:max-w-[70%] lg:max-w-[70%]"
         >
           <SwiperSlide className="flex justify-center items-center w-full h-full">
             <img src={craftifyHome} alt="Craftify Home" className="object-cover w-full h-full" />
@@ -76,6 +76,7 @@ export default function Projects() {
             <img src={sofa} alt="Sofa4Rent" className="object-cover w-full h-full" />
           </SwiperSlide>
         </Swiper>
+        </div>
       </div>
     </section>
   );

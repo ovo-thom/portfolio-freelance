@@ -32,11 +32,11 @@ const Navbar = () => {
     <>
       {/* Navbar visible sur grands écrans */}
       <nav
-        className={`hidden md:block fixed top-[2%] w-[61%] left-[25%] border-blue-900 rounded-lg text-white py-4 px-6 lg:px-12 bg-black bg-opacity-30 z-[999] transition-transform duration-300 ${
+        className={`hidden md:block md:w-2/3 md:left-1/2 md:transform md:-translate-x-1/2 fixed top-[2%] rounded-lg text-white py-4 lg:px-12 bg-black bg-opacity-30 z-[999] duration-300 ${
           isVisible ? "transform-none" : "-translate-y-full"
         }`}
       >
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center w-full">
           <div className="flex items-center">
             <FaCode size={28} className="text-blue-500"/>
             <a

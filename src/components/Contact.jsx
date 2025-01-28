@@ -4,14 +4,14 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
   return (
     <div id="contact">
-      <section className="contact-section bg-[#080808] text-white">
+      <section className="contact-section bg-[#080808] text-gray-400">
         <div className="flex flex-col lg:flex-row pt-8 px-8 space-y-6">
-          <div className="contact-left lg:w-1/2 lg:border-r border-b ">
+          <div className="contact-left lg:w-1/2 lg:border-r lg:border-r-gray-600 border-b border-b-gray-600 ">
             <div className="lets-connect w-full p-4">
-              <h2 className="font-pixelify text-center text-blue-900 text-2xl sm:text-3xl lg:text-5xl mb-5 md:mb-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
+              <h2 className="font-pixelify text-center text-2xl sm:text-3xl lg:text-5xl mb-5 md:mb-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
                 Let&apos;s Connect
               </h2>
-              <p className="text-gray-300 lg:text-xl">
+              <p className="text-gray-300 lg:text-lg">
                 Développeur web front-end junior passionné par la création
                 d&apos;interfaces modernes avec React et Tailwind CSS, je suis
                 motivé et prêt à relever de nouveaux défis.{" "}
