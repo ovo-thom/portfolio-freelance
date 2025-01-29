@@ -85,11 +85,6 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,1,24,1) 0%, rgba(10,
   }
 }
 
-/* .title {
-  font-family: "Shantell Sans", cursive;
-  letter-spacing: 4px;
-} */
-
 .hue-rotate {
   animation: hueRotate 10s infinite linear;
 }
@@ -97,10 +92,6 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,1,24,1) 0%, rgba(10,
 .card:not(:last-child) {
   background: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.568);
-}
-
-.contactform {
-  font-family: 'Playfair Display';
 }
 
 .arrow {

@@ -49,10 +49,10 @@ const Navbar = () => {
 
           {/* Menu pour les grands écrans */}
           <div className="text-xl">
-            <a href="#about" className="hover:underline ml-4">About</a>
-            <a href="#skills" className="ml-4 hover:underline">Skills</a>
-            <a href="#projects" className="ml-4 hover:underline">Projects</a>
-            <a href="#contact" className="ml-4 hover:underline">Contact</a>
+            <a href="#about" className="hover:underline ml-4 font-semibold">About</a>
+            <a href="#skills" className="ml-4 hover:underline font-semibold">Skills</a>
+            <a href="#projects" className="ml-4 hover:underline font-semibold">Projects</a>
+            <a href="#contact" className="ml-4 hover:underline font-semibold">Contact</a>
           </div>
         </div>
       </nav>

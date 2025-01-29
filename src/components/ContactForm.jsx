@@ -69,7 +69,7 @@ export default function ContactForm() {
           ></textarea>
           <button
             type="submit"
-            className="block mx-auto border border-blue-900 px-6 py-1 rounded-md mt-3"
+            className="block mx-auto text-white border border-blue-500 px-6 py-1 rounded-md mt-3"
           >
             Send
           </button>

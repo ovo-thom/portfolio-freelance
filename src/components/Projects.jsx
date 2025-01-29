@@ -61,20 +61,34 @@ export default function Projects() {
           }}
           pagination={true}
           modules={[EffectCube, Pagination]}
-          className="mySwiper w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh] xl:h-[82vh] max-w-[70%] md:max-w-[70%] lg:max-w-[70%]"
+          className="mySwiper w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh] xl:h-[vh] max-w-[70%] md:max-w-[70%] lg:max-w-[70%]"
         >
-          <SwiperSlide className="flex justify-center items-center w-full h-full">
-            <img src={craftifyHome} alt="Craftify Home" className="object-cover w-full h-full" />
-          </SwiperSlide>
-          <SwiperSlide className="flex justify-center items-center w-full h-full">
-            <img src={lifestyle} alt="lifestyle" className="object-cover w-full h-full" />
-          </SwiperSlide>
-          <SwiperSlide className="flex justify-center items-center w-full h-full">
-            <img src={headphones} alt="Headphones" className="object-cover w-full h-full" />
-          </SwiperSlide>
-          <SwiperSlide className="flex justify-center items-center w-full h-full">
-            <img src={sofa} alt="Sofa4Rent" className="object-cover w-full h-full" />
-          </SwiperSlide>
+
+<SwiperSlide className="flex justify-center items-center w-full h-full">
+  <div className="w-full h-full flex justify-center items-center">
+    <img src={craftifyHome} alt="Craftify Home" className="w-full h-full object-cover object-top" />
+  </div>
+</SwiperSlide>
+
+<SwiperSlide className="flex justify-center items-center w-full h-full">
+  <div className="w-full h-full flex justify-center items-center">
+    <img src={lifestyle} alt="Lifestyle" className="w-full h-full object-cover object-top" />
+  </div>
+</SwiperSlide>
+
+<SwiperSlide className="flex justify-center items-center w-full h-full">
+  <div className="w-full h-full flex justify-center items-center">
+    <img src={headphones} alt="Headphones" className="w-full h-full object-cover object-top" />
+  </div>
+</SwiperSlide>
+
+<SwiperSlide className="flex justify-center items-center w-full h-full">
+  <div className="w-full h-full flex justify-center items-center">
+    <img src={sofa} alt="Sofa4Rent" className="w-full h-full object-cover object-top" />
+  </div>
+</SwiperSlide>
+
+
         </Swiper>
         </div>
       </div>
