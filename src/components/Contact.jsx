@@ -28,6 +28,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:text-purple-500 duration-200"
+                    aria-label="GitHub Profile"
                   >
                     <FaGithub size={40} />
                   </a>
@@ -36,6 +37,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:text-purple-500 duration-200"
+                    aria-label="LinkedIn Profile"
                   >
                     <FaLinkedin size={40} />
                   </a>

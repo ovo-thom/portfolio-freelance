@@ -1,6 +1,8 @@
 import Typewriter from "typewriter-effect";
 import owl from "../assets/owl.jpg";
-import plumehero from "../images/plume-hero.jpg";
+import owlWebp from "../assets/owl.webp";
+import plumehero from "../images/plume-hero.webp";
+import plumeheroJpg from "../images/plume-hero.jpg";
 
 const Hero = () => {
   return (
@@ -10,11 +12,17 @@ const Hero = () => {
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0 hue-rotate">
-        <img
-          src={plumehero}
-          alt="Plume Hero Background"
-          className="w-full h-full object-cover"
-        />
+      <picture>
+          {/* WebP Image */}
+          <source srcSet={plumehero} type="image/webp" />
+          {/* Fallback JPG Image */}
+          <img
+            // Remplacer uniquement l'extension ".webp" par ".jpg"
+            src={plumeheroJpg}
+            alt="Plume Hero Background"
+            className="w-full h-full object-cover"
+          />
+        </picture>
       </div>
 
       {/* Content */}
@@ -38,12 +46,15 @@ const Hero = () => {
         </div>
 
         {/* Profile Image */}
-        <div className="flex justify-center items-center md:mt-0 mt-6">
-          <img
-            src={owl}
-            alt="Profile"
-            className="rounded-full object-cover border shadow-lg w-32 z-20 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56 lg:w-60 lg:h-60 xl:w-64 xl:h-64"
-          />
+        <div className="relative z-30 flex justify-center items-center md:mt-0 mt-6">
+        <picture>
+            <source srcSet={owlWebp} type="image/webp" />
+            <img
+              src={owl}
+              alt="Profile"
+              className="rounded-full object-cover border shadow-lg w-32 z-20 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56 lg:w-60 lg:h-60 xl:w-64 xl:h-64"
+            />
+          </picture>
         </div>
       </div>
     </section>

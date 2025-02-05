@@ -19,18 +19,18 @@ export default function Projects() {
         <div className="project-description text-xl lg:w-1/2">
 
           <div className="py-3 mb-4 rounded-lg">
-            <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">Craftify</h3>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">Craftify</h2>
             <p className="mb-4 text-gray-300 text-base">Un site de e-commerce réalisé en équipe, utilisant React et Vite pour le développement front-end. Le projet met en avant des fonctionnalités avancées telles que la gestion de panier, les filtres de produits, etc.</p>
             <a href="https://craftify-project.myportfolio.com/" target="_blank" className='text-slate-600 hover:text-slate-50 duration-300'>Portfolio du projet</a>
           </div>
 
           <div className="py-3 mb-4 rounded-lg">
-            <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">LifeStyle Fitness</h3>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">LifeStyle Fitness</h2>
             <p className="mb-4 text-gray-300 text-base">LifeStyle Fitness est une page réalisée à partir d&apos;une maquette Figma, développée avec Next.js et Tailwind CSS, responsive sur desktop et mobile. Un formulaire a également été intégré pour permettre aux utilisateurs d&apos;obtenir un pass gratuit.</p>
           </div>
 
           <div className="py-3 mb-4 rounded-lg">
-            <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">Headphones</h3>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">Headphones</h2>
             <p className="mb-4 text-gray-300 text-base">Un site web de présentation de casques audio, créé en utilisant HTML, CSS, et JavaScript. Le design est moderne et épuré, avec une attention particulière portée à l&apos;expérience utilisateur et à la réactivité.</p>
           </div>
 
@@ -46,7 +46,7 @@ export default function Projects() {
       <div className="w-full lg:w-1/2 p-5 flex flex-col justify-center items-center relative">
         
         {/* Flèche animée */}
-        <div className="arrow animate-bounce text-2xl mb-5">
+        <div className="text-[#D7D74F] animate-bounce text-2xl mb-5">
           ↓ Swipe pour voir plus ↓
         </div>
 

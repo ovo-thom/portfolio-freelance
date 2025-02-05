@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .project {
@@ -18,14 +18,22 @@ body {
 }
 
 .project::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,1,24,1) 0%, rgba(10,16,60,1) 0%, rgba(13,12,12,1) 24%, rgba(9,6,6,1) 71%, rgba(13,9,63,1) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(2, 1, 24, 1) 0%,
+    rgba(10, 16, 60, 1) 0%,
+    rgba(13, 12, 12, 1) 24%,
+    rgba(9, 6, 6, 1) 71%,
+    rgba(13, 9, 63, 1) 100%
+  );
   background-position: center;
   background-size: cover;
   filter: brightness(45%);
@@ -64,9 +72,17 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,1,24,1) 0%, rgba(10,
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,1,24,1) 0%, rgba(10,16,60,1) 0%, rgba(13,12,12,1) 24%, rgba(9,6,6,1) 71%, rgba(13,9,63,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(2, 1, 24, 1) 0%,
+    rgba(10, 16, 60, 1) 0%,
+    rgba(13, 12, 12, 1) 24%,
+    rgba(9, 6, 6, 1) 71%,
+    rgba(13, 9, 63, 1) 100%
+  );
   filter: brightness(45%);
-  z-index: -1; 
+  z-index: -1;
 }
 
 .sectionskills {
@@ -74,7 +90,6 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,1,24,1) 0%, rgba(10,
   z-index: 10;
   width: 80%;
 }
-
 
 @keyframes hueRotate {
   0% {
@@ -94,17 +109,16 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,1,24,1) 0%, rgba(10,
   border-bottom: 1px solid rgba(255, 255, 255, 0.568);
 }
 
-.arrow {
-  font-size: 24px;
-  color: rgb(215, 215, 79);
-}
-
 .animate-bounce {
   animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -114,4 +128,3 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,1,24,1) 0%, rgba(10,
     transform: translateY(-5px);
   }
 }
-
