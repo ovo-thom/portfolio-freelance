@@ -49,7 +49,7 @@ const About = () => {
                 Diplômé de BeCode, j&apos;ai développé une expertise en
                 front-end grâce à une pédagogie active favorisant
                 l&apos;autonomie et la collaboration. J&apos;ai maîtrisé des
-                technologies comme HTML, CSS, JavaScript, et React, et réalisé
+                technologies comme HTML, CSS, JavaScript ainsi que React, et réalisé
                 un projet de site e-commerce intégrant des fonctionnalités
                 modernes et responsive.
               </p>
