@@ -13,10 +13,10 @@ import { EffectCube, Pagination } from 'swiper/modules';
 
 export default function Projects() {
   return (
-    <section id="projects" className="project w-full h-auto">
-        <h1 className="font-pixelify text-center text-2xl sm:text-3xl lg:text-5xl mb-5 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">My Projects</h1>
-      <div className="w-full p-5 flex flex-col lg:flex-row">
-        <div className="project-description text-xl lg:w-1/2">
+    <section id="projects" className="project w-full">
+        <h1 className="font-pixelify text-center text-2xl sm:text-3xl lg:text-5xl my-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">My Projects</h1>
+      <div className="w-full flex flex-col lg:flex-row">
+        <div className="project-description text-xl lg:w-1/2 px-5">
 
           <div className="py-3 mb-4 rounded-lg">
             <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">Craftify</h2>
@@ -43,10 +43,10 @@ export default function Projects() {
       </div>
 
       {/* Slider des images */}
-      <div className="w-full lg:w-1/2 p-5 flex flex-col justify-center items-center relative">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center items-center relative">
         
         {/* Flèche animée */}
-        <div className="text-[#D7D74F] animate-bounce text-2xl mb-5">
+        <div className="text-[#D7D74F] animate-bounce text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl mb-5">
           ↓ Swipe pour voir plus ↓
         </div>
 
@@ -61,7 +61,7 @@ export default function Projects() {
           }}
           pagination={true}
           modules={[EffectCube, Pagination]}
-          className="mySwiper w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh] xl:h-[vh] max-w-[70%] md:max-w-[70%] lg:max-w-[70%]"
+          className="w-full h-[60vh] sm:h-[70vh] sm:w-4/5 md:h-[80vh] md:w-1/2 lg:w-[80%]"
         >
 
 <SwiperSlide className="flex justify-center items-center w-full h-full">

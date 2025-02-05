@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="about-section w-full h-auto pt-9 md:pt-14 bg-[#080808] text-white"
+      className="about-section w-full h-auto pt-9 md:pt-14 bg-[#080808] text-white sm:pl-10"
     >
       <div className="w-full px-2">
         <h2 className="font-pixelify text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-10 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
@@ -19,15 +19,14 @@ const About = () => {
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.8, ease: "easeOut" }}
-            style={{ marginLeft: "50px" }}
           >
             <img
               src={codingnight}
               alt="About me"
-              className="rounded-full mx-auto w-[90%] h-72 shadow-lg lg:min-h-96 lg:min-w-72"
+              className="rounded-full mx-auto h-56 sm:h-64 md:h-72 w-auto shadow-lg lg:h-96 lg:min-w-72"
             />
           </motion.div>
-          <div className="md:w-full w-full p-4">
+          <div className="md:w-full w-full p-4 md:py-12">
             <div className="text-base w-[80%] mx-auto md:text-lg lg:text-xl leading-relaxed mb-8">
               <h3 className="text-lg sm:text-xl md:text-2xl mb-2 font-semibold text-gray-100">
                 Objectif professionnel
