@@ -1,4 +1,4 @@
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
@@ -7,24 +7,32 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Footer from './components/Footer';
 import Training from './components/Training';
+import TrainingDetails from './components/TrainingDetails'; 
 
 function App() {
-  
-
   return (
     <Router>
-    <div>
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Training />
-      <Contact />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <Skills />
+              <Projects />
+              <Training />
+              <Contact />
+            </>
+          }
+        />
+
+        <Route path="/training" element={<TrainingDetails />} />
+      </Routes>
       <Footer />
-    </div>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
