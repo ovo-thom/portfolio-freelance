@@ -32,7 +32,7 @@ const About = () => {
                 Objectif professionnel
               </h3>
               <p className="text-gray-300 text-base">
-                Développeur web front-end junior spécialisé en React et Tailwind
+                Développeur web front-end junior spécialisé en React, Nextjs et Tailwind
                 CSS,{" "}
                 <span className="underline">
                   {" "}
