@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -14,13 +17,11 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        // Si on défile vers le bas
         setIsVisible(false);
       } else {
-        // Si on défile vers le haut
         setIsVisible(true);
       }
-      setLastScrollY(window.scrollY); // Mémorise la position actuelle
+      setLastScrollY(window.scrollY);
     };
     window.addEventListener("scroll", handleScroll);
 
@@ -39,12 +40,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center w-full">
           <div className="flex items-center">
             <FaCode size={28} className="text-blue-500" />
-            <a
-              href="#home"
+            <Link
+              to="/"
               className="headtitle text-base sm:text-xl md:text-2xl font-bold ml-2 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent"
             >
               Portfolio
-            </a>
+            </Link>
           </div>
 
           {/* Menu pour les grands écrans */}
@@ -68,11 +69,17 @@ const Navbar = () => {
       {/* Menu burger visible sur petits écrans */}
       <div className="md:hidden fixed top-0 left-0 w-full bg-black opacity-95 z-50">
         <div className="flex justify-between items-center py-4 px-6">
-          <FaCode size={28} className="text-blue-500" />
+          <button
+            onClick={() => navigate("/")}
+            className="focus:outline-none"
+            aria-label="Retour à l'accueil"
+          >
+            <FaCode size={28} className="text-blue-500" />
+          </button>
           <button
             onClick={toggleMenu}
             className="text-2xl text-white focus:outline-none"
-            aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"} // Description dynamique du bouton
+            aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
             aria-expanded={isOpen ? "true" : "false"} // Indique si le menu est ouvert ou non
           >
             {isOpen ? <FaTimes /> : <FaBars />}
