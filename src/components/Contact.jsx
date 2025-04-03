@@ -13,7 +13,7 @@ const Contact = () => {
               </h2>
               <p className="text-gray-300 lg:text-lg">
                 Développeur web front-end junior passionné par la création
-                d&apos;interfaces modernes avec React et Tailwind CSS, je suis
+                d&apos;interfaces modernes avec Nextjs, React et Tailwind CSS, je suis
                 motivé et prêt à relever de nouveaux défis.{" "}
                 <span className="block mt-4">
                   {" "}
