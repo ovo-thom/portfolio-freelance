@@ -8,7 +8,7 @@ function Training() {
       </h2>
       <div className="border sm:w-2/3 lg:w-2/3 mx-auto rounded-lg border-gray-700 px-6 bg-black shadow-lg shadow-blue-900 py-8 my-8">
         <p className="text-gray-100 font-semibold text-center text-base sm:text-lg lg:text-xl">
-          Découvrez les diplômes que j&apos;ai obtenus.
+          Découvrez les certifications que j&apos;ai obtenus.
         </p>
         <p className="text-gray-300 text-center text-sm sm:text-md 2xl:text-lg mt-4 italic">
           Cliquez sur le lien ci-dessous pour en savoir plus.
@@ -19,7 +19,7 @@ function Training() {
           to="/training"
           className="text-gray-500 text-base sm:text-lg lg:text-xl hover:text-gray-50 duration-300"
         >
-          Voir mes diplômes
+          Voir mes certifications
         </Link>
       </div>
     </section>
