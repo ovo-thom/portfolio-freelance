@@ -7,7 +7,8 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Footer from './components/Footer';
 import Training from './components/Training';
-import TrainingDetails from './components/TrainingDetails'; 
+import TrainingDetails from './components/TrainingDetails';
+import ProjectPage from './components/ProjectPage';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         />
 
         <Route path="/training" element={<TrainingDetails />} />
+        <Route path="/projects" element={<ProjectPage />} />
       </Routes>
       <Footer />
     </Router>

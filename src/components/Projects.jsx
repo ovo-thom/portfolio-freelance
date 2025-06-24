@@ -1,4 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
+
 
 import "swiper/css";
 import "swiper/css/effect-cube";
@@ -56,7 +58,9 @@ export default function Projects() {
               Headphones
             </h2>
             <p className="mb-4 text-gray-300 text-base">
-            Une maquette de site de présentation de casques audio, réalisée en HTML et CSS, avec un peu de JavaScript pour une navbar dynamique offrant une meilleure expérience utilisateur.
+              Une maquette de site de présentation de casques audio, réalisée en
+              HTML et CSS, avec un peu de JavaScript pour une navbar dynamique
+              offrant une meilleure expérience utilisateur.
             </p>
           </div>
 
@@ -65,7 +69,9 @@ export default function Projects() {
               Sofa4Rent
             </p>
             <p className="mb-4 text-gray-300 text-base">
-            Une maquette de site de location de sofas, réalisée en HTML et CSS. Ce projet met en avant un design soigné et une interface utilisateur intuitive.
+              Une maquette de site de location de sofas, réalisée en HTML et
+              CSS. Ce projet met en avant un design soigné et une interface
+              utilisateur intuitive.
             </p>
           </div>
         </div>
@@ -131,6 +137,9 @@ export default function Projects() {
             </SwiperSlide>
           </Swiper>
         </div>
+      </div>
+      <div className="text-white text-center text-sm md:text-xl">
+        <Link to="/projects" className="text-slate-600 hover:text-slate-50 duration-300">Voir plus de projets</Link>
       </div>
     </section>
   );
