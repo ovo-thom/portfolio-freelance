@@ -50,16 +50,28 @@ const Navbar = () => {
 
           {/* Menu pour les grands écrans */}
           <div className="text-xl">
-            <a href="#about" className="hover:underline ml-4 font-semibold">
+            <a
+              href="#about"
+              className="ml-4 hover:border-b hover:border-blue-200 duration-200 font-medium"
+            >
               About
             </a>
-            <a href="#skills" className="ml-4 hover:underline font-semibold">
+            <a
+              href="#skills"
+              className="ml-4 hover:border-b hover:border-blue-200 duration-200 font-medium"
+            >
               Skills
             </a>
-            <a href="#projects" className="ml-4 hover:underline font-semibold">
+            <a
+              href="#projects"
+              className="ml-4 hover:border-b hover:border-blue-200 duration-200 font-medium"
+            >
               Projects
             </a>
-            <a href="#contact" className="ml-4 hover:underline font-semibold">
+            <a
+              href="#contact"
+              className="ml-4 hover:border-b hover:border-blue-200 duration-200 font-medium"
+            >
               Contact
             </a>
           </div>
