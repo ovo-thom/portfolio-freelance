@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import projects from "../data/projectData";
+import { FaGithub } from "react-icons/fa";
 
 export default function ProjectList() {
   const { id } = useParams();
@@ -38,9 +39,10 @@ export default function ProjectList() {
         </div>
 
         {/* Liens demo/code */}
-        <div className="flex justify-center gap-4 mt-8">
+        <div className="flex justify-center space-x-2 mt-8 border border-gray-600 rounded-full w-64 p-2 mx-auto">
           {/* <a href={project.demoLink} className="btn-primary">Voir la démo</a> */}
-          <a href={project.codeLink} className="btn-secondary">
+          <FaGithub className="text-xl"/>
+          <a href={project.codeLink} className="btn-secondary hover:text-blue-300 duration-200" target="blank">
             Code source
           </a>
         </div>
