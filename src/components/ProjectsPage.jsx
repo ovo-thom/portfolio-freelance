@@ -3,8 +3,8 @@ import projects from "../data/projectData";
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen bg-[#080808] text-white p-8 w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-[95%] mx-auto mt-20">
+    <div className="min-h-screen bg-[#080808] text-white p-4 sm:p-8 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full max-w-7xl mx-auto mt-16 sm:mt-20">
         {projects.map((project) => (
           <Link key={project.id} to={`/projects/${project.id}`}>
             <div className="relative border border-gray-700 rounded-xl p-3 group h-full w-full">
@@ -21,7 +21,7 @@ export default function ProjectsPage() {
                   </span>
                 ))}
               </div>
-              <div className="relative m-4 overflow-hidden rounded h-48 sm:h-56 md:h-64 bg-gray-900/20">
+              <div className="relative mx-2 sm:m-4 overflow-hidden rounded h-40 sm:h-48 md:h-56 lg:h-64 bg-gray-900/20">
                 <img
                   src={project.image}
                   alt={project.title}

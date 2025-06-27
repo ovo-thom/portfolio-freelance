@@ -27,16 +27,16 @@ export default function ProjectList() {
           </div>
         </div>
 
-        <div className="sm:mb-8 bg-gray-900/20 rounded-lg">
+        <div className="mb-4 sm:mb-8 bg-gray-900/20 rounded-lg p-2 sm:p-4">
           <img
             src={project.image}
             alt={project.title}
-            className="w-full max-w-4xl mx-auto rounded-lg object-contain h-64 sm:h-80 md:h-96"
+            className="w-full max-w-4xl mx-auto rounded-lg object-contain h-48 sm:h-64 md:h-80 lg:h-96"
           />
         </div>
 
-        <div className="prose prose-invert max-w-4xl mx-auto">
-          <p className="text=base sm:text-lg leading-relaxed">{project.description}</p>
+        <div className="prose prose-invert max-w-4xl mx-auto px-4">
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed">{project.description}</p>
         </div>
 
         {/* Liens demo/code */}
