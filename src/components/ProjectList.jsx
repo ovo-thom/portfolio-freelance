@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import projects from "../data/projectData";
+import projects from "../../public/projectData";
 import { FaGithub } from "react-icons/fa";
 
 export default function ProjectList() {
@@ -36,7 +36,9 @@ export default function ProjectList() {
         </div>
 
         <div className="prose prose-invert max-w-4xl mx-auto px-4">
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed">{project.description}</p>
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed">
+            {project.description}
+          </p>
         </div>
 
         {/* Liens demo/code */}
