@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Training() {
   return (
-    <section className="bg-[#080808] p-10">
+    <section className="bg-[#080808] px-10 py-3 md:py-10">
       <h2 className="font-pixelify text-2xl sm:text-3xl lg:text-5xl font-bold text-center py-3 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
         Training & Education
       </h2>

@@ -10,12 +10,12 @@ export default function ProjectList() {
 
   return (
     <div className="min-h-screen bg-[#080808] text-white">
-      <div className="container mx-auto px-8 pt-20 pb-12">
+      <div className="container mx-auto px-8 pt-20 pb-10">
         <div className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             {project.title}
           </h1>
-          <div className="flex flex-wrap justify-center gap-2">
+          <div className="flex flex-wrap justify-center gap-2 py-3">
             {project.technologies.map((tech) => (
               <span
                 key={tech}
@@ -27,22 +27,27 @@ export default function ProjectList() {
           </div>
         </div>
 
-        <div className="mb-8">
+        <div className="sm:mb-8 bg-gray-900/20 rounded-lg">
           <img
             src={project.image}
-            className="w-full max-w-4xl mx-auto rounded-lg"
+            alt={project.title}
+            className="w-full max-w-4xl mx-auto rounded-lg object-contain h-64 sm:h-80 md:h-96"
           />
         </div>
 
         <div className="prose prose-invert max-w-4xl mx-auto">
-          <p className="text-lg leading-relaxed">{project.description}</p>
+          <p className="text=base sm:text-lg leading-relaxed">{project.description}</p>
         </div>
 
         {/* Liens demo/code */}
         <div className="flex justify-center space-x-2 mt-8 border border-gray-600 rounded-full w-64 p-2 mx-auto">
           {/* <a href={project.demoLink} className="btn-primary">Voir la démo</a> */}
-          <FaGithub className="text-xl"/>
-          <a href={project.codeLink} className="btn-secondary hover:text-blue-300 duration-200" target="blank">
+          <FaGithub className="text-xl" />
+          <a
+            href={project.codeLink}
+            className="btn-secondary hover:text-blue-300 duration-200"
+            target="blank"
+          >
             Code source
           </a>
         </div>

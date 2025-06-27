@@ -16,7 +16,7 @@ import { EffectCube, Pagination } from "swiper/modules";
 export default function Projects() {
   return (
     <section id="projects" className="project w-full">
-      <h1 className="font-pixelify text-center text-2xl sm:text-3xl lg:text-5xl my-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
+      <h1 className="font-pixelify text-center text-2xl sm:text-3xl lg:text-5xl mt-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
         My Projects
       </h1>
       <div className="w-full flex flex-col lg:flex-row">
@@ -138,8 +138,8 @@ export default function Projects() {
           </Swiper>
         </div>
       </div>
-      <div className="text-white text-center text-sm md:text-xl">
-        <Link to="/projects" className="text-slate-600 hover:text-slate-50 duration-300">Voir plus de projets</Link>
+      <div className="text-white text-center text-base md:text-xl my-5">
+        <Link to="/projects" className="text-gray-500 hover:text-slate-50 duration-300">Voir plus de projets</Link>
       </div>
     </section>
   );

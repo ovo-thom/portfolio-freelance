@@ -21,7 +21,7 @@ export default function ProjectsPage() {
                   </span>
                 ))}
               </div>
-              <div className="relative m-4 overflow-hidden rounded">
+              <div className="relative m-4 overflow-hidden rounded h-48 sm:h-56 md:h-64 bg-gray-900/20">
                 <img
                   src={project.image}
                   alt={project.title}

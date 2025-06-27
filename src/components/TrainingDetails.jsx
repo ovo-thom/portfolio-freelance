@@ -42,7 +42,6 @@ function TrainingDetails() {
               <img
                 src={training.image}
                 alt={`diplôme ${training.title}`}
-                // className="w-full max-w-[300px] sm:h-[240px] md:h-[350px] mx-auto object-contain rounded-lg transition-transform duration-300 ease-in-out hover:scale-125"
                 className="w-[300px] sm:h-[240px] md:h-[300px] object-contain rounded-lg transition-transform duration-300 ease-in-out hover:scale-125"
               />
             </div>
