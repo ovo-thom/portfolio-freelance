@@ -49,7 +49,7 @@ export default function ProjectList() {
           />
         </div>
 
-        <div className="flex flex-wrap justify-evenly my-8">
+        <div className="flex flex-wrap max-w-4xl mx-auto justify-between gap-2 mb-8 md:my-8">
           {project.imageList.map((img, index) => (
             <div key={index} className="flex items-center">
               <img
@@ -62,7 +62,7 @@ export default function ProjectList() {
           ))}
         </div>
 
-        <div className="prose prose-invert max-w-4xl mx-auto px-4">
+        <div className="prose prose-invert max-w-4xl mx-auto">
           <p className="text-sm sm:text-base md:text-lg leading-relaxed">
             {project.description}
           </p>
@@ -85,13 +85,13 @@ export default function ProjectList() {
 
       {modalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black mx-4 bg-opacity-80 flex items-center justify-center z-50"
           onClick={closeModal}
         >
           <img
             src={selectedImage}
             alt="Agrandie"
-            className="max-w-4xl max-h-[90vh] rounded-lg shadow-lg"
+            className="md:max-w-4xl max-h-[90vh] rounded-lg shadow-lg"
             onClick={(e) => e.stopPropagation()}
           />
           <button

@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: "Daily Dashboard",
     description:
-      "Daily Dashboard est une interface web conçue pour accompagner les utilisateurs dans leur routine quotidienne et les aider à rester motivés et organisés. L'application centralise plusieurs outils pratiques : une to-do list pour planifier les tâches de la journée, un champ focus du jour pour garder ses objectifs en tête, une citation inspirante renouvelée quotidiennement, ainsi qu’un système d’alarme, chronomètre et minuteur utile pour gérer son temps de travail ou de pause. Elle intègre également une météo locale en temps réel, permettant de consulter rapidement les conditions extérieures grâce à l’API OpenWeather. L'ensemble est présenté dans une interface soignée, responsive, et pensée pour améliorer le bien-être et la productivité au quotidien.",
+      "Daily Dashboard est une application web qui aide les utilisateurs à structurer leur journée et rester motivés. Elle regroupe plusieurs outils pratiques : une to-do list pour les tâches quotidiennes, un champ 'focus du jour', une citation inspirante renouvelée chaque jour, ainsi qu’un système complet d’alarme, chronomètre et minuteur.L’application affiche aussi la météo locale en temps réel grâce à l’API OpenWeather.L’interface est claire, responsive, et pensée pour favoriser l’organisation, la concentration et le bien-être au quotidien.",
     image: "/dailydashboard.png",
     imageList: ["/alarme.png", "/chrono.png", "/timer.png"],
     technologies: [
@@ -16,7 +16,7 @@ const projects = [
       "Github",
     ],
     // demoLink: "https://monportfolio.com",
-    codeLink: "https://github.com/monpseudo/portfolio",
+    codeLink: "https://github.com/ovo-thom/daily-dashboard",
   },
   {
     id: 2,
