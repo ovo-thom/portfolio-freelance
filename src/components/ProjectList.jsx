@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import projects from "../../public/projectData";
 import { FaGithub } from "react-icons/fa";
@@ -6,7 +7,20 @@ export default function ProjectList() {
   const { id } = useParams();
   const project = projects.find((p) => p.id === Number(id));
 
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
   if (!project) return <p>Projet introuvable</p>;
+
+  function openModal(img) {
+    setSelectedImage(img);
+    setModalOpen(true);
+  }
+
+  function closeModal() {
+    setModalOpen(false);
+    setSelectedImage(null);
+  }
 
   return (
     <div className="min-h-screen bg-[#080808] text-white">
@@ -35,6 +49,19 @@ export default function ProjectList() {
           />
         </div>
 
+        <div className="flex flex-wrap justify-evenly my-8">
+          {project.imageList.map((img, index) => (
+            <div key={index} className="flex items-center">
+              <img
+                src={img}
+                alt={`Image ${index + 1}`}
+                className="my-3 md:my-0 w-52 h-32 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity hover:scale-105 transform duration-200"
+                onClick={() => openModal(img)}
+              />
+            </div>
+          ))}
+        </div>
+
         <div className="prose prose-invert max-w-4xl mx-auto px-4">
           <p className="text-sm sm:text-base md:text-lg leading-relaxed">
             {project.description}
@@ -48,12 +75,34 @@ export default function ProjectList() {
           <a
             href={project.codeLink}
             className="btn-secondary hover:text-blue-300 duration-200"
-            target="blank"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Code source
           </a>
         </div>
       </div>
+
+      {modalOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          onClick={closeModal}
+        >
+          <img
+            src={selectedImage}
+            alt="Agrandie"
+            className="max-w-4xl max-h-[90vh] rounded-lg shadow-lg"
+            onClick={(e) => e.stopPropagation()}
+          />
+          <button
+            onClick={closeModal}
+            className="absolute top-8 right-8 text-white text-3xl font-bold cursor-pointer"
+            aria-label="Fermer la modale"
+          >
+            &times;
+          </button>
+        </div>
+      )}
     </div>
   );
 }
