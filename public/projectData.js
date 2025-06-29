@@ -24,7 +24,7 @@ const projects = [
     description:
       "Une application de gestion d’incidents permettant de créer, filtrer, modifier et supprimer des signalements. Elle propose une interface claire pour suivre le statut des incidents (ouvert / résolu), avec affichage automatique de la date de résolution. Le tout est construit avec React et Tailwind CSS, en adoptant des composants modulaires et une gestion d’état efficace via useState.",
     image: "/gestion-incidents.png",
-    imageList: ["/form-incident.png"],
+    imageList: ["/form-incident.png", "/filter-incident.png"],
     technologies: ["Next.js (React)", "Tailwind", "createPortal"],
     // demoLink: "https://meteoapp.com",
     codeLink: "https://github.com/ovo-thom/incident-manager",
