@@ -49,13 +49,13 @@ export default function ProjectList() {
           />
         </div>
 
-        <div className="flex flex-wrap max-w-4xl mx-auto justify-between gap-2 mb-8 md:my-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center max-w-4xl mx-auto mb-8">
           {project.imageList.map((img, index) => (
             <div key={index} className="flex items-center">
               <img
                 src={img}
                 alt={`Image ${index + 1}`}
-                className="my-3 md:my-0 w-52 h-32 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity hover:scale-105 transform duration-200"
+                className="w-44 h-32 object-cover rounded-lg cursor-pointer hover:opacity-80 hover:scale-105 transition-transform duration-200"
                 onClick={() => openModal(img)}
               />
             </div>

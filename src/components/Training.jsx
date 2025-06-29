@@ -17,7 +17,7 @@ function Training() {
       <div className="flex justify-center">
         <Link
           to="/training"
-          className="text-gray-500 text-base sm:text-lg lg:text-xl hover:text-gray-50 duration-300"
+          className="text-transparent bg-clip-text bg-gradient-to-r border border-gray-900 px-4 py-1 rounded-full from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] hover:brightness-125 duration-300 text-base sm:text-lg lg:text-xl font-semibold"
         >
           Voir mes certifications
         </Link>

@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 
-
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
@@ -138,8 +137,13 @@ export default function Projects() {
           </Swiper>
         </div>
       </div>
-      <div className="text-white text-center text-base md:text-xl my-5">
-        <Link to="/projects" className="text-gray-500 hover:text-slate-50 duration-300">Voir plus de projets</Link>
+      <div className="text-center text-base md:text-xl my-5">
+        <Link
+          to="/projects"
+          className="text-transparent bg-clip-text bg-gradient-to-r border border-gray-900 px-4 py-1 rounded-full from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] hover:brightness-125 duration-300 text-base sm:text-lg lg:text-xl font-semibold"
+        >
+          Voir plus de projets
+        </Link>
       </div>
     </section>
   );
