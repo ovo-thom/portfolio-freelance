@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import projects from "../../public/projectData";
+import projects from "../data/projectData";
 
 export default function ProjectsPage() {
   return (

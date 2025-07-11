@@ -20,12 +20,17 @@ export default function Projects() {
       </h1>
       <div className="w-full flex flex-col lg:flex-row">
         <div className="project-description text-xl lg:w-1/2 px-5">
-        <div className="py-3 mb-4 rounded-lg">
+          <div className="py-3 mb-4 rounded-lg">
             <p className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">
               Popcorn Movie
             </p>
             <p className="mb-4 text-gray-300 text-base">
-              <strong className="text-blue-600">PopCorn Movie :</strong> est une application web moderne de découverte de films, développée avec Next.js et stylisée via Tailwind CSS. Elle s&apos;appuie sur l&apos;API de TMDb (The Movie Database) pour récupérer en temps réel les derniers films à l&apos;affiche, les tendances du moment, et les résultats de recherche personnalisés.
+              <strong className="text-blue-600">PopCorn Movie :</strong> est une
+              application web moderne de découverte de films, développée avec
+              Next.js et stylisée via Tailwind CSS. Elle s&apos;appuie sur
+              l&apos;API de TMDb (The Movie Database) pour récupérer en temps
+              réel les derniers films à l&apos;affiche, les tendances du moment,
+              et les résultats de recherche personnalisés.
             </p>
           </div>
           <div className="py-3 mb-4 rounded-lg">
@@ -70,7 +75,6 @@ export default function Projects() {
               offrant une meilleure expérience utilisateur.
             </p>
           </div>
-
         </div>
 
         {/* Slider des images */}

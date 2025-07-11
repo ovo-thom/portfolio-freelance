@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import projects from "../../public/projectData";
-import { FaGithub } from "react-icons/fa";
+import projects from "../data/projectData";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ProjectList() {
   const { id } = useParams();
@@ -68,18 +68,27 @@ export default function ProjectList() {
           </p>
         </div>
 
-        {/* Liens demo/code */}
-        <div className="flex justify-center space-x-2 mt-8 border border-gray-600 rounded-full w-64 p-2 mx-auto">
-          {/* <a href={project.demoLink} className="btn-primary">Voir la démo</a> */}
-          <FaGithub className="text-xl" />
-          <a
-            href={project.codeLink}
-            className="btn-secondary hover:text-blue-300 duration-200"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Code source
-          </a>
+        <div className="flex items-baseline justify-center space-x-6">
+          <div className="flex justify-center items-center space-x-2 mt-8 border border-gray-600 rounded-full w-64 p-2">
+            <FaExternalLinkAlt className="text-lg" />
+            <a
+              href={project.demoLink}
+              className="btn-primary hover:text-blue-300 duration-200"
+            >
+              Voir la démo
+            </a>
+          </div>
+          <div className="flex justify-center items-center space-x-2 mt-8 border border-gray-600 rounded-full w-64 p-2">
+            <FaGithub className="text-xl" />
+            <a
+              href={project.codeLink}
+              className="btn-secondary hover:text-blue-300 duration-200"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code source
+            </a>
+          </div>
         </div>
       </div>
 
