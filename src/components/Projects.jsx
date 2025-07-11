@@ -5,9 +5,9 @@ import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
+import homepage from "../images/homepage_popcornmovie.png";
 import craftifyHome from "../images/craftify-home.png";
 import headphones from "../images/Headphones.png";
-import sofa from "../images/Sofa.png";
 import lifestyle from "../images/lifestyle.png";
 
 import { EffectCube, Pagination } from "swiper/modules";
@@ -20,6 +20,14 @@ export default function Projects() {
       </h1>
       <div className="w-full flex flex-col lg:flex-row">
         <div className="project-description text-xl lg:w-1/2 px-5">
+        <div className="py-3 mb-4 rounded-lg">
+            <p className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">
+              Popcorn Movie
+            </p>
+            <p className="mb-4 text-gray-300 text-base">
+              <strong className="text-blue-600">PopCorn Movie :</strong> est une application web moderne de découverte de films, développée avec Next.js et stylisée via Tailwind CSS. Elle s&apos;appuie sur l&apos;API de TMDb (The Movie Database) pour récupérer en temps réel les derniers films à l&apos;affiche, les tendances du moment, et les résultats de recherche personnalisés.
+            </p>
+          </div>
           <div className="py-3 mb-4 rounded-lg">
             <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">
               Craftify
@@ -63,16 +71,6 @@ export default function Projects() {
             </p>
           </div>
 
-          <div className="py-3 mb-4 rounded-lg">
-            <p className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">
-              Sofa4Rent
-            </p>
-            <p className="mb-4 text-gray-300 text-base">
-              Une maquette de site de location de sofas, réalisée en HTML et
-              CSS. Ce projet met en avant un design soigné et une interface
-              utilisateur intuitive.
-            </p>
-          </div>
         </div>
 
         {/* Slider des images */}
@@ -98,6 +96,15 @@ export default function Projects() {
             <SwiperSlide className="flex justify-center items-center w-full h-full">
               <div className="w-full h-full flex justify-center items-center">
                 <img
+                  src={homepage}
+                  alt="PopcornMovie"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="flex justify-center items-center w-full h-full">
+              <div className="w-full h-full flex justify-center items-center">
+                <img
                   src={craftifyHome}
                   alt="Craftify Home"
                   className="w-full h-full object-cover object-top"
@@ -120,16 +127,6 @@ export default function Projects() {
                 <img
                   src={headphones}
                   alt="Headphones"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide className="flex justify-center items-center w-full h-full">
-              <div className="w-full h-full flex justify-center items-center">
-                <img
-                  src={sofa}
-                  alt="Sofa4Rent"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
