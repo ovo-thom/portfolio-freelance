@@ -21,61 +21,68 @@ export default function Projects() {
       <div className="w-full flex flex-col lg:flex-row">
         <div className="project-description text-xl lg:w-1/2 px-5">
           <div className="py-3 mb-4 rounded-lg">
-            <p className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">
+            <p className="text-xl sm:text-2xl font-semibold mb-2 text-white">
               Popcorn Movie
             </p>
-            <p className="mb-4 text-gray-300 text-base">
-              <strong className="text-blue-600">PopCorn Movie :</strong> est une
-              application web moderne de découverte de films, développée avec
-              Next.js et stylisée via Tailwind CSS. Elle s&apos;appuie sur
+            <p className="mb-4 text-gray-100 text-base">
+              <span className="italic font-light text-blue-600 ">
+                PopCorn Movie :
+              </span>{" "}
+              est une application web moderne de découverte de films, développée
+              avec Next.js et stylisée via Tailwind CSS. Elle s&apos;appuie sur
               l&apos;API de TMDb (The Movie Database) pour récupérer en temps
               réel les derniers films à l&apos;affiche, les tendances du moment,
               et les résultats de recherche personnalisés.
             </p>
             <Link
               to="/projects/3"
-              className="text-slate-600 hover:text-slate-50 duration-300"
+              className="text-gray-200 hover:text-white duration-300 border border-gray-600 hover:border-gray-400 px-3 py-1 rounded-md text-sm"
             >
-              Voir le projet en détail
+              → Voir le projet en détail
             </Link>
           </div>
           <div className="py-3 mb-4 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
               Craftify
             </h2>
-            <p className="mb-4 text-gray-300 text-base">
-              Un site de e-commerce réalisé en équipe, utilisant React et Vite
-              pour le développement front-end. Le projet met en avant des
+            <p className="mb-4 text-gray-100 text-base">
+              <span className="italic font-light text-blue-600 ">
+                Craftify :
+              </span>{" "}
+              est un site de e-commerce réalisé en équipe, utilisant React et
+              Vite pour le développement front-end. Le projet met en avant des
               fonctionnalités avancées telles que la gestion de panier, les
               filtres de produits, etc.
             </p>
             <a
               href="https://craftify-project.myportfolio.com/"
               target="_blank"
-              className="text-slate-600 hover:text-slate-50 duration-300"
+              className="text-gray-200 hover:text-white duration-300 border border-gray-600 hover:border-gray-400 px-3 py-1 rounded-md text-sm"
             >
-              Portfolio du projet
+              → Portfolio du projet
             </a>
           </div>
 
           <div className="py-3 mb-4 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
               LifeStyle Fitness
             </h2>
-            <p className="mb-4 text-gray-300 text-base">
-              LifeStyle Fitness est une page réalisée à partir d&apos;une
-              maquette Figma, développée avec Next.js et Tailwind CSS,
-              responsive sur desktop et mobile. Un formulaire a également été
-              intégré pour permettre aux utilisateurs d&apos;obtenir un pass
-              gratuit.
+            <p className="mb-4 text-gray-100 text-base">
+              <span className="italic font-light text-blue-600 ">
+                LifeStyle fitness
+              </span>{" "}
+              est une page réalisée à partir d&apos;une maquette Figma,
+              développée avec Next.js et Tailwind CSS, responsive sur desktop et
+              mobile. Un formulaire a également été intégré pour permettre aux
+              utilisateurs d&apos;obtenir un pass gratuit.
             </p>
           </div>
 
           <div className="py-3 mb-4 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
               Headphones
             </h2>
-            <p className="mb-4 text-gray-300 text-base">
+            <p className="mb-4 text-gray-100 text-base">
               Une maquette de site de présentation de casques audio, réalisée en
               HTML et CSS, avec un peu de JavaScript pour une navbar dynamique
               offrant une meilleure expérience utilisateur.
@@ -86,7 +93,7 @@ export default function Projects() {
         {/* Slider des images */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center relative">
           {/* Flèche animée */}
-          <div className="text-[#D7D74F] animate-bounce text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl mb-5">
+          <div className="text-[#e1e143] animate-bounce text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl mb-5 font-semibold">
             ↓ Swipe pour voir plus ↓
           </div>
 

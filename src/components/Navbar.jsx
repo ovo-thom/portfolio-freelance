@@ -33,7 +33,7 @@ const Navbar = () => {
     <>
       {/* Navbar visible sur grands écrans */}
       <nav
-        className={`hidden md:block md:w-2/3 md:left-1/2 md:transform md:-translate-x-1/2 fixed top-[2%] rounded-lg text-white py-4 lg:px-12 bg-black bg-opacity-30 z-[999] duration-300 ${
+        className={`hidden border border-white/10 md:block md:w-2/3 md:left-1/2 md:transform md:-translate-x-1/2 fixed top-[2%] rounded-lg text-white py-4 lg:px-12 bg-black/30 backdrop-blur-md z-[999] transition-all duration-300 ease-in-out cursor-pointer ${
           isVisible ? "transform-none" : "-translate-y-full"
         }`}
       >
@@ -54,7 +54,7 @@ const Navbar = () => {
               to="about"
               smooth={true}
               duration={500}
-              className="ml-4 hover:border-b hover:border-blue-200 duration-200 font-medium"
+              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-blue-300"
             >
               About
             </ScrollLink>
@@ -62,7 +62,7 @@ const Navbar = () => {
               to="skills"
               smooth={true}
               duration={500}
-              className="ml-4 hover:border-b hover:border-blue-200 duration-200 font-medium"
+              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-blue-300"
             >
               Skills
             </ScrollLink>
@@ -70,7 +70,7 @@ const Navbar = () => {
               to="projects"
               smooth={true}
               duration={500}
-              className="ml-4 hover:border-b hover:border-blue-200 duration-200 font-medium"
+              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-blue-300"
             >
               Projects
             </ScrollLink>
@@ -78,7 +78,7 @@ const Navbar = () => {
               to="contact"
               smooth={true}
               duration={500}
-              className="ml-4 hover:border-b hover:border-blue-200 duration-200 font-medium"
+              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-blue-300"
             >
               Contact
             </ScrollLink>
@@ -87,7 +87,7 @@ const Navbar = () => {
       </nav>
 
       {/* Menu burger visible sur petits écrans */}
-      <div className="md:hidden fixed top-0 left-0 w-full bg-black opacity-95 z-50">
+      <div className="md:hidden fixed top-0 left-0 w-full bg-black/90 backdrop-blur-sm z-50">
         <div className="flex justify-between items-center py-4 px-6">
           <button
             onClick={() => navigate("/")}

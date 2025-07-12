@@ -65,7 +65,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center items-center h-32 md:h-48">
-                <img src={skill.image} alt={skill.name} className="w-10 h-10 md:w-14 md:h-14 mx-auto" />
+                <img src={skill.image} alt={skill.name} className="w-14 h-14 md:w-16 md:h-16 mx-auto" />
               </div>
             </SwiperSlide>
           ))}

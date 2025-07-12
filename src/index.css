@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: "Poppins";
+  font-family: "Inter", sans-serif;
 }
 
 .project {
@@ -91,19 +91,6 @@ body {
   width: 80%;
 }
 
-@keyframes hueRotate {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
-
-.hue-rotate {
-  animation: hueRotate 10s infinite linear;
-}
-
 .card:not(:last-child) {
   background: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.568);
@@ -127,4 +114,22 @@ body {
   60% {
     transform: translateY(-5px);
   }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(-45deg, #0a0a0a, #1a1a2e, #16213e, #2d1b69);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
 }

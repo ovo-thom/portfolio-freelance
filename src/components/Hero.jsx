@@ -1,8 +1,7 @@
-import Typewriter from "typewriter-effect";
 import owl from "../assets/owl.jpg";
 import owlWebp from "../assets/owl.webp";
-import plumehero from "../images/plume-hero.webp";
-import plumeheroJpg from "../images/plume-hero.jpg";
+import DecryptedText from "../components/DecryptedText";
+import CosmicBackground from "../components/CosmicBackground";
 
 const Hero = () => {
   return (
@@ -10,28 +9,22 @@ const Hero = () => {
       id="home"
       className="relative text-white h-screen flex flex-col md:flex-row items-center justify-center md:justify-between"
     >
-      <div className="absolute inset-0 z-0 hue-rotate">
-        <picture>
-          <source srcSet={plumehero} type="image/webp" />
-          <img
-            src={plumeheroJpg}
-            alt="Plume Hero Background"
-            className="w-full h-full object-cover"
-          />
-        </picture>
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-950 via-slate-950 to-black">
+        <CosmicBackground starDensity={180} shootingStarFrequency={0.003} />
       </div>
 
       <div className="relative w-full flex flex-col md:flex-row md:h-[35%] items-center justify-evenly md:pl-12 p-4">
-        <div className="absolute inset-0 md:bg-black md:opacity-70"></div>
+        <div className="absolute inset-0 md:bg-black md:opacity-60"></div>
         <div className="flex flex-col items-center md:items-start text-center md:text-left sm:mt-10 md:mt-0 mb-8 md:mb-0 z-10">
           <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-6 md:mb-8 font-semibold">
-            Bonjour, je suis{" "}
-            <Typewriter
-              options={{
-                strings: ["Thomas"],
-                autoStart: true,
-                loop: true,
-              }}
+            <DecryptedText
+              text="Bonjour je suis Thomas"
+              speed={100}
+              maxIterations={20}
+              animateOn="view"
+              sequential={true}
+              repeat={true}
+              repeatInterval={8000}
             />
           </h1>
           <p className="text-lg sm:text-xl md:text-xl lg:text-2xl">
