@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,6 @@ const Navbar = () => {
     };
     window.addEventListener("scroll", handleScroll);
 
-    // Nettoyage de l'événement lors du démontage du composant
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
@@ -50,30 +50,38 @@ const Navbar = () => {
 
           {/* Menu pour les grands écrans */}
           <div className="text-xl">
-            <a
-              href="#about"
+            <ScrollLink
+              to="about"
+              smooth={true}
+              duration={500}
               className="ml-4 hover:border-b hover:border-blue-200 duration-200 font-medium"
             >
               About
-            </a>
-            <a
-              href="#skills"
+            </ScrollLink>
+            <ScrollLink
+              to="skills"
+              smooth={true}
+              duration={500}
               className="ml-4 hover:border-b hover:border-blue-200 duration-200 font-medium"
             >
               Skills
-            </a>
-            <a
-              href="#projects"
+            </ScrollLink>
+            <ScrollLink
+              to="projects"
+              smooth={true}
+              duration={500}
               className="ml-4 hover:border-b hover:border-blue-200 duration-200 font-medium"
             >
               Projects
-            </a>
-            <a
-              href="#contact"
+            </ScrollLink>
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={500}
               className="ml-4 hover:border-b hover:border-blue-200 duration-200 font-medium"
             >
               Contact
-            </a>
+            </ScrollLink>
           </div>
         </div>
       </nav>
@@ -92,7 +100,7 @@ const Navbar = () => {
             onClick={toggleMenu}
             className="text-2xl text-white focus:outline-none"
             aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
-            aria-expanded={isOpen ? "true" : "false"} // Indique si le menu est ouvert ou non
+            aria-expanded={isOpen ? "true" : "false"}
           >
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>
@@ -101,34 +109,42 @@ const Navbar = () => {
         {/* Menu burger pour les petits écrans */}
         {isOpen && (
           <div className="bg-black text-white flex flex-col items-center text-lg py-4">
-            <a
-              href="#about"
+            <ScrollLink
+              to="about"
+              smooth={true}
+              duration={500}
               onClick={toggleMenu}
               className="hover:underline py-2 border-b border-b-blue-500 w-full text-center"
             >
               About
-            </a>
-            <a
-              href="#skills"
+            </ScrollLink>
+            <ScrollLink
+              to="skills"
+              smooth={true}
+              duration={500}
               onClick={toggleMenu}
               className="hover:underline py-2 w-full border-b border-b-purple-500 text-center"
             >
               Skills
-            </a>
-            <a
-              href="#projects"
+            </ScrollLink>
+            <ScrollLink
+              to="projects"
+              smooth={true}
+              duration={500}
               onClick={toggleMenu}
               className="hover:underline py-2 w-full border-b border-b-pink-500 text-center"
             >
               Projects
-            </a>
-            <a
-              href="#contact"
+            </ScrollLink>
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={500}
               onClick={toggleMenu}
-              className="hover:underline py-2 w-full text-center"
+              className="py-2 w-full text-center"
             >
               Contact
-            </a>
+            </ScrollLink>
           </div>
         )}
       </div>
