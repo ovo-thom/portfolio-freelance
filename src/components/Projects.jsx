@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
-import homepage from "../images/homepage_popcornmovie.png";
+import homepage from "../assets/popcornmovie/homepage_popcornmovie.png";
 import craftifyHome from "../images/craftify-home.png";
 import headphones from "../images/Headphones.png";
 import lifestyle from "../images/lifestyle.png";
@@ -32,6 +32,12 @@ export default function Projects() {
               réel les derniers films à l&apos;affiche, les tendances du moment,
               et les résultats de recherche personnalisés.
             </p>
+            <Link
+              to="/projects/3"
+              className="text-slate-600 hover:text-slate-50 duration-300"
+            >
+              Voir le projet en détail
+            </Link>
           </div>
           <div className="py-3 mb-4 rounded-lg">
             <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-gray-100">
