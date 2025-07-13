@@ -44,7 +44,7 @@ const Navbar = () => {
               to="/"
               className="title-night text-base sm:text-xl md:text-3xl font-bold ml-2 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent"
             >
-              Portfolio
+              Thomas | Portfolio
             </Link>
           </div>
 
@@ -87,14 +87,20 @@ const Navbar = () => {
       </nav>
 
       {/* Menu burger visible sur petits écrans */}
-      <div className="md:hidden fixed top-0 left-0 w-full bg-black/90 backdrop-blur-sm z-50">
+      <div className="md:hidden fixed top-0 left-0 w-full bg-black/80 backdrop-blur-sm z-50 shadow-lg">
         <div className="flex justify-between items-center py-4 px-6">
           <button
             onClick={() => navigate("/")}
-            className="focus:outline-none"
+            className="flex items-center gap-2 focus:outline-none"
             aria-label="Retour à l'accueil"
           >
-            <FaCode size={28} className="text-blue-500" />
+            <span className="text-xl font-bold bg-gradient-to-r from-blue-400 via-pink-400 to-purple-400 bg-clip-text text-transparent tracking-widest drop-shadow-[0_0_8px_rgba(168,85,247,0.7)]">
+              TT
+            </span>
+            <FaCode
+              size={24}
+              className="text-blue-400 drop-shadow-[0_0_8px_rgba(168,85,247,0.7)]"
+            />
           </button>
           <button
             onClick={toggleMenu}
@@ -108,7 +114,7 @@ const Navbar = () => {
 
         {/* Menu burger pour les petits écrans */}
         {isOpen && (
-          <div className="bg-black text-white flex flex-col items-center text-lg py-4">
+          <div className="bg-black/20 text-white flex flex-col items-center text-lg py-4">
             <ScrollLink
               to="about"
               smooth={true}
