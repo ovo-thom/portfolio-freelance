@@ -34,7 +34,7 @@ const Skills = () => {
     <section id="skills" className="relative py-10 md:py-20">
       <div className="background-filter"></div>
       <div className="sectionskills container mx-auto relative z-10">
-        <h2 className="title-night text-2xl sm:text-3xl lg:text-5xl font-bold text-center mb-10 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">Skills</h2>
+        <h2 className="title-night text-3xl sm:text-3xl lg:text-5xl font-bold text-center mb-10 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">Skills</h2>
         <Swiper
           autoplay={{
             delay: 2000,

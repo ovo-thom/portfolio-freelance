@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 function Training() {
   return (
-    <section className="bg-[#080808] px-10 py-3 md:py-10">
-      <h2 className="title-night text-2xl sm:text-3xl lg:text-5xl font-bold text-center py-3 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
+    <section className="bg-gradient-to-br from-gray-950 via-slate-950 to-black px-10 py-3 md:py-10">
+      <h2 className="title-night text-3xl sm:text-3xl lg:text-5xl font-bold text-center py-3 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
         Training & Education
       </h2>
-      <div className="border sm:w-2/3 lg:w-2/3 mx-auto rounded-lg border-gray-700 px-6 bg-black shadow-lg shadow-blue-900 py-8 my-8">
+      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-6 py-8 my-8 sm:w-2/3 lg:w-2/3 mx-auto hover:bg-white/10 transition-all duration-300">
         <p className="text-gray-100 font-semibold text-center text-base sm:text-lg lg:text-xl">
           Découvrez les certifications que j&apos;ai obtenus.
         </p>

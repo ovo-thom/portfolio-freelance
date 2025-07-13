@@ -3,7 +3,7 @@ import projects from "../data/projectData";
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen bg-[#080808] text-white p-4 sm:p-8 w-full">
+    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-slate-950 to-black text-white p-4 sm:p-8 w-full">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full max-w-7xl mx-auto mt-16 sm:mt-20">
         {projects.map((project) => (
           <Link key={project.id} to={`/projects/${project.id}`}>

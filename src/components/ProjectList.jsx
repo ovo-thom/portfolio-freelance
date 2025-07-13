@@ -23,12 +23,12 @@ export default function ProjectList() {
   }
 
   return (
-    <div className="min-h-screen bg-[#080808] text-white">
+    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-slate-950 to-black text-white">
       <div className="container mx-auto px-8 pt-20 pb-10">
         <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
             {project.title}
-          </h1>
+          </h2>
           <div className="flex flex-wrap justify-center gap-2 py-3">
             {project.technologies.map((tech) => (
               <span
