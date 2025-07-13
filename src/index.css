@@ -17,6 +17,10 @@ body {
   padding: 20px;
 }
 
+.title-night {
+  font-family: "Griffy", cursive;
+}
+
 .project::before {
   content: "";
   position: absolute;

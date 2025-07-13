@@ -8,7 +8,7 @@ const About = () => {
       className="about-section w-full h-auto pt-9 md:pt-14 bg-[#080808] text-white sm:pl-10"
     >
       <div className="w-full px-2">
-        <h2 className="font-pixelify text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-10 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
+        <h2 className="title-night text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-10 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
           About me
         </h2>
 

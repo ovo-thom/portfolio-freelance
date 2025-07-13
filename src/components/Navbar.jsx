@@ -39,10 +39,10 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center w-full">
           <div className="flex items-center">
-            <FaCode size={28} className="text-blue-500" />
+            {/* <FaCode size={28} className="text-blue-500" /> */}
             <Link
               to="/"
-              className="headtitle text-base sm:text-xl md:text-2xl font-bold ml-2 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent"
+              className="title-night text-base sm:text-xl md:text-3xl font-bold ml-2 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent"
             >
               Portfolio
             </Link>
