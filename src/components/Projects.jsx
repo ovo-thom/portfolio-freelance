@@ -28,7 +28,7 @@ export default function Projects() {
               <span className="italic font-light text-blue-600 ">
                 PopCorn Movie :
               </span>{" "}
-              est une application web moderne de découverte de films, développée
+              Une application web moderne de découverte de films, développée
               avec Next.js et stylisée via Tailwind CSS. Elle s&apos;appuie sur
               l&apos;API de TMDb (The Movie Database) pour récupérer en temps
               réel les derniers films à l&apos;affiche, les tendances du moment,
@@ -49,10 +49,7 @@ export default function Projects() {
               <span className="italic font-light text-blue-600 ">
                 Craftify :
               </span>{" "}
-              est un site de e-commerce réalisé en équipe, utilisant React et
-              Vite pour le développement front-end. Le projet met en avant des
-              fonctionnalités avancées telles que la gestion de panier, les
-              filtres de produits, etc.
+              Premier projet réalisé en équipe dans le cadre de ma formation chez BeCode. Il s’agit d’un site e-commerce dédié aux artisans, développé avec React et Vite pour le front-end. Le site intègre des fonctionnalités essentielles telles que la gestion du panier, les filtres de produits et une navigation fluide.
             </p>
             <a
               href="https://craftify-project.myportfolio.com/"
@@ -69,12 +66,13 @@ export default function Projects() {
             </h2>
             <p className="mb-4 text-gray-100 text-base">
               <span className="italic font-light text-blue-600 ">
-                LifeStyle fitness
+                LifeStyle fitness :
               </span>{" "}
-              est une page réalisée à partir d&apos;une maquette Figma,
-              développée avec Next.js et Tailwind CSS, responsive sur desktop et
-              mobile. Un formulaire a également été intégré pour permettre aux
-              utilisateurs d&apos;obtenir un pass gratuit.
+              Réalisation d’une page web à partir d’une maquette Figma pour
+              LifeStyle Fitness, une chaîne de salles de sport reconnue. Le
+              projet a été développé avec Next.js et Tailwind CSS, en version
+              responsive pour desktop et mobile. Un formulaire a également été
+              intégré pour permettre aux utilisateurs d’obtenir un pass gratuit.
             </p>
           </div>
 
@@ -83,9 +81,12 @@ export default function Projects() {
               Headphones
             </h2>
             <p className="mb-4 text-gray-100 text-base">
-              Une maquette de site de présentation de casques audio, réalisée en
-              HTML et CSS, avec un peu de JavaScript pour une navbar dynamique
-              offrant une meilleure expérience utilisateur.
+              <span className="italic font-light text-blue-600 ">
+                Headphones :
+              </span>{" "}
+              Reproduction d’un site vitrine de casques audio à partir d’une
+              maquette, réalisée en HTML et CSS, avec un peu de JavaScript pour
+              une navbar dynamique offrant une meilleure expérience utilisateur.
             </p>
           </div>
         </div>

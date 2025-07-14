@@ -39,7 +39,6 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center w-full">
           <div className="flex items-center">
-            {/* <FaCode size={28} className="text-blue-500" /> */}
             <Link
               to="/"
               className="title-night text-base sm:text-xl md:text-3xl font-bold ml-2 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent"
@@ -54,7 +53,7 @@ const Navbar = () => {
               to="about"
               smooth={true}
               duration={500}
-              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-blue-300"
+              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-gray-300"
             >
               About
             </ScrollLink>
@@ -62,7 +61,7 @@ const Navbar = () => {
               to="skills"
               smooth={true}
               duration={500}
-              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-blue-300"
+              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-gray-300"
             >
               Skills
             </ScrollLink>
@@ -70,7 +69,7 @@ const Navbar = () => {
               to="projects"
               smooth={true}
               duration={500}
-              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-blue-300"
+              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-gray-300"
             >
               Projects
             </ScrollLink>
@@ -78,7 +77,7 @@ const Navbar = () => {
               to="contact"
               smooth={true}
               duration={500}
-              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-blue-300"
+              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-gray-300"
             >
               Contact
             </ScrollLink>
