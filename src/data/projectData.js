@@ -64,7 +64,7 @@ const projects = [
       "Swiper.js",
       "LocalStorage",
     ],
-    demoLink: "https://meteoapp.com",
+    demoLink: "https://popcorn-movie-two.vercel.app/",
     codeLink: "https://github.com/ovo-thom/popcorn_movie",
   },
 ];
