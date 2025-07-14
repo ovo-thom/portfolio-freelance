@@ -15,7 +15,7 @@ import { EffectCube, Pagination } from "swiper/modules";
 export default function Projects() {
   return (
     <section id="projects" className="project w-full">
-     <h2 className="title-night text-center text-3xl sm:text-3xl lg:text-5xl sm:my-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent leading-relaxed py-2">
+      <h2 className="title-night text-center text-3xl sm:text-3xl lg:text-5xl sm:my-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent leading-relaxed py-2">
         My Projects
       </h2>
       <div className="w-full flex flex-col lg:flex-row">
@@ -106,7 +106,7 @@ export default function Projects() {
             }}
             pagination={true}
             modules={[EffectCube, Pagination]}
-            className="w-full h-[60vh] sm:h-[70vh] sm:w-4/5 md:h-[80vh] md:w-1/2 lg:w-[80%]"
+            className="w-full h-[60vh] sm:h-[70vh] sm:w-4/5 md:h-[90vh] md:w-1/2 lg:w-[80%]"
           >
             <SwiperSlide className="flex justify-center items-center w-full h-full">
               <div className="w-full h-full flex justify-center items-center">
