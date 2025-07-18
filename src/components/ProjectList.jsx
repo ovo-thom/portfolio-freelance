@@ -94,7 +94,7 @@ export default function ProjectList() {
 
       {modalOpen && (
         <div
-          className="fixed inset-0 bg-black mx-4 bg-opacity-80 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
           onClick={closeModal}
         >
           <img

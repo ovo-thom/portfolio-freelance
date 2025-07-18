@@ -11,6 +11,8 @@ import timer from "../assets/daily_dashboard/timer.png";
 import filterIncident from "../assets/incident_manager/filter-incident.png";
 import formIncident from "../assets/incident_manager/form-incident.png";
 import gestionIncident from "../assets/incident_manager/gestion-incidents.png";
+import artvibeDarkMode from "../assets/artvibe/artvibe_darkmode_homepage.png"
+import artvibeLightMode from "../assets/artvibe/artvibe_lightmode-homepage.png"
 
 const projects = [
   {
@@ -66,6 +68,29 @@ const projects = [
     ],
     demoLink: "https://popcorn-movie-two.vercel.app/",
     codeLink: "https://github.com/ovo-thom/popcorn_movie",
+  },
+  {
+    id: 4,
+    title: "ArtVibe",
+    description:
+      "ArtVibe : est une application web moderne permettant d’explorer et de découvrir des œuvres visuelles inspirantes issues d’Unsplash. Grâce à une interface élégante et responsive, l’utilisateur peut filtrer les images par thème, effectuer des recherches dynamiques et naviguer facilement dans une galerie en grille masonry. Le projet intègre un mode clair/sombre, un scroll fluide, ainsi qu’un footer avec liens sociaux pour une expérience complète. Ce projet met en avant la maîtrise de Next.js, React et Tailwind CSS, l’intégration d’une API externe, la gestion de l’état et du filtrage côté client, ainsi que le souci du design et de l’accessibilité. ArtVibe est idéal pour illustrer des compétences en développement front-end moderne et en création d’interfaces utilisateur attractives.",
+    image: artvibeLightMode,
+    imageList: [
+      artvibeDarkMode,
+      artvibeLightMode
+    ],
+    technologies: [
+      "Next.js (React)",
+      "Unsplash API",
+      "TypeScript",
+      "Tailwind",
+      "Responsive design",
+      "Masonry (react-masonry-css)",
+      "Dark/Light mode"
+      
+    ],
+    demoLink: "https://popcorn-movie-two.vercel.app/",
+    codeLink: "https://github.com/ovo-thom/artvibe",
   },
 ];
 
