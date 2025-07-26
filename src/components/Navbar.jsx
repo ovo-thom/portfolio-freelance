@@ -53,7 +53,7 @@ const Navbar = () => {
               to="about"
               smooth={true}
               duration={500}
-              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-gray-300"
+              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
             >
               About
             </ScrollLink>
@@ -61,7 +61,7 @@ const Navbar = () => {
               to="skills"
               smooth={true}
               duration={500}
-              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-gray-300"
+              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
             >
               Skills
             </ScrollLink>
@@ -69,7 +69,7 @@ const Navbar = () => {
               to="projects"
               smooth={true}
               duration={500}
-              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-gray-300"
+              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
             >
               Projects
             </ScrollLink>
@@ -77,7 +77,7 @@ const Navbar = () => {
               to="contact"
               smooth={true}
               duration={500}
-              className="ml-6 hover:border-b-2 hover:border-blue-400 duration-200 hover:text-gray-300"
+              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
             >
               Contact
             </ScrollLink>

@@ -11,9 +11,15 @@ import timer from "../assets/daily_dashboard/timer.png";
 import filterIncident from "../assets/incident_manager/filter-incident.png";
 import formIncident from "../assets/incident_manager/form-incident.png";
 import gestionIncident from "../assets/incident_manager/gestion-incidents.png";
-import artvibeDarkMode from "../assets/artvibe/artvibe_darkmode_homepage.png"
-import artvibeLightMode from "../assets/artvibe/artvibe_lightmode-homepage.png"
-
+import artvibeDarkMode from "../assets/artvibe/artvibe_darkmode_homepage.png";
+import artvibeLightMode from "../assets/artvibe/artvibe_lightmode-homepage.png";
+import templateDoml from "../assets/doml/templateDoml.png"
+import header from "../assets/doml/header.png"
+import contactLogos from "../assets/doml/contactLogos.png"
+import logosSection from "../assets/doml/logosSection.png"
+import templateDomlResponsiv from "../assets/doml/templateDomlResponsiv.png"
+import headerResponsiv from "../assets/doml/headerResponsiv.png"
+import contactResponsiv from "../assets/doml/contactResponsiv.png"
 const projects = [
   {
     id: 1,
@@ -42,7 +48,7 @@ const projects = [
     image: gestionIncident,
     imageList: [filterIncident, formIncident, gestionIncident],
     technologies: ["Next.js (React)", "Tailwind", "createPortal"],
-    // demoLink: "https://meteoapp.com",
+    demoLink: "",
     codeLink: "https://github.com/ovo-thom/incident-manager",
   },
   {
@@ -75,10 +81,7 @@ const projects = [
     description:
       "ArtVibe : est une application web moderne permettant d’explorer et de découvrir des œuvres visuelles inspirantes issues d’Unsplash. Grâce à une interface élégante et responsive, l’utilisateur peut filtrer les images par thème, effectuer des recherches dynamiques et naviguer facilement dans une galerie en grille masonry. Le projet intègre un mode clair/sombre, un scroll fluide, ainsi qu’un footer avec liens sociaux pour une expérience complète. Ce projet met en avant la maîtrise de Next.js, React et Tailwind CSS, l’intégration d’une API externe, la gestion de l’état et du filtrage côté client, ainsi que le souci du design et de l’accessibilité. ArtVibe est idéal pour illustrer des compétences en développement front-end moderne et en création d’interfaces utilisateur attractives.",
     image: artvibeLightMode,
-    imageList: [
-      artvibeDarkMode,
-      artvibeLightMode
-    ],
+    imageList: [artvibeDarkMode, artvibeLightMode],
     technologies: [
       "Next.js (React)",
       "Unsplash API",
@@ -86,11 +89,28 @@ const projects = [
       "Tailwind",
       "Responsive design",
       "Masonry (react-masonry-css)",
-      "Dark/Light mode"
-      
+      "Dark/Light mode",
     ],
-    demoLink: "https://popcorn-movie-two.vercel.app/",
+    demoLink: "",
     codeLink: "https://github.com/ovo-thom/artvibe",
+  },
+  {
+    id: 5,
+    title: "Doml",
+    description:
+      "Doml est un site vitrine moderne développé avec Next.js et Tailwind CSS, conçu pour mettre en avant une expérience utilisateur soignée et professionnelle. Le projet se distingue par un design fidèle à la maquette Figma d’origine, une interface responsive adaptée aux écrans mobile et desktop, et l’utilisation de composants réutilisables pour une structure de code claire et évolutive. Des animations d’apparition au scroll apportent du dynamisme, renforçant l’aspect interactif et moderne du site. Ce projet illustre la capacité à reproduire des maquettes UI complexes, à organiser un code scalable, et à intégrer des effets visuels avancés pour valoriser l’image d’une marque.",
+    image: templateDoml,
+    imageList: [header, contactLogos, logosSection, templateDomlResponsiv, headerResponsiv, contactResponsiv],
+    technologies: [
+      "Next.js (React)",
+      "Tailwind",
+      "Responsive design",
+      "Composants réutilisables",
+      "Figma",
+      "Animation au scroll"
+    ],
+    demoLink: "",
+    codeLink: "https://github.com/ovo-thom/doml",
   },
 ];
 
