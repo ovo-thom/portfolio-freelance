@@ -7,7 +7,7 @@ const About = () => {
       id="about"
       className="about-section w-full h-auto pt-9 md:pt-14 bg-gradient-to-br from-gray-950 via-slate-950 to-black text-white sm:pl-10"
     >
-      <div className="w-full px-2">
+      <div className="w-full px-2 max-w-6xl mx-auto">
         <h2 className="title-night text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-10 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
           About me
         </h2>

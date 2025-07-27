@@ -28,9 +28,9 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="relative py-10 md:py-20">
+    <section id="skills" className="relative py-10 md:py-20 ">
       <div className="background-filter"></div>
-      <div className="sectionskills container mx-auto relative z-10">
+      <div className="sectionskills container relative z-10 max-w-6xl mx-auto">
         <h2 className="title-night text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-10 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
           Skills
         </h2>

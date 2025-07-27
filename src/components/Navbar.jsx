@@ -33,7 +33,7 @@ const Navbar = () => {
     <>
       {/* Navbar visible sur grands écrans */}
       <nav
-        className={`hidden border border-white/10 md:block md:w-2/3 md:left-1/2 md:transform md:-translate-x-1/2 fixed top-[2%] rounded-lg text-white py-4 lg:px-12 bg-black/30 backdrop-blur-md z-[999] transition-all duration-300 ease-in-out cursor-pointer ${
+        className={`hidden max-w-6xl border border-white/10 md:block md:w-2/3 md:left-1/2 md:transform md:-translate-x-1/2 fixed top-[2%] rounded-lg text-white py-4 lg:px-12 bg-black/30 backdrop-blur-md z-[999] transition-all duration-300 ease-in-out cursor-pointer ${
           isVisible ? "transform-none" : "-translate-y-full"
         }`}
       >
