@@ -48,7 +48,7 @@ const projects = [
     image: gestionIncident,
     imageList: [filterIncident, formIncident, gestionIncident],
     technologies: ["Next.js (React)", "Tailwind", "createPortal"],
-    demoLink: "",
+    // demoLink: "",
     codeLink: "https://github.com/ovo-thom/incident-manager",
   },
   {
@@ -91,7 +91,7 @@ const projects = [
       "Masonry (react-masonry-css)",
       "Dark/Light mode",
     ],
-    demoLink: "",
+    // demoLink: "",
     codeLink: "https://github.com/ovo-thom/artvibe",
   },
   {
@@ -109,7 +109,7 @@ const projects = [
       "Figma",
       "Animation au scroll"
     ],
-    demoLink: "",
+    demoLink: "https://doml-ochre.vercel.app/",
     codeLink: "https://github.com/ovo-thom/doml",
   },
 ];

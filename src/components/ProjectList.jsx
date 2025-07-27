@@ -74,6 +74,8 @@ export default function ProjectList() {
             <a
               href={project.demoLink}
               className="btn-primary hover:text-blue-300 duration-200"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Voir la démo
             </a>
