@@ -38,7 +38,7 @@ const Hero = () => {
               <img
                 src={owl}
                 alt="Profile"
-                className="rounded-full object-cover border shadow-lg w-32 z-20 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56 lg:w-60 lg:h-60 xl:w-64 xl:h-64"
+                className="rounded-full object-cover border border-gray-600 shadow-lg w-32 z-20 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56 lg:w-60 lg:h-60 xl:w-64 xl:h-64"
               />
             </picture>
           </div>
