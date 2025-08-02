@@ -6,8 +6,6 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import Training from "./components/Training";
-import TrainingDetails from "./components/TrainingDetails";
 import ProjectsPage from "./components/ProjectsPage";
 import ProjectList from "./components/ProjectList";
 
@@ -24,14 +22,12 @@ function App() {
               <About />
               <Skills />
               <Projects />
-              <Training />
               <Contact />
             </>
           }
         />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/:id" element={<ProjectList />} />
-        <Route path="/training" element={<TrainingDetails />} />
       </Routes>
       <Footer />
     </Router>
