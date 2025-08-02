@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link
               to="/"
-              className="title-night text-base sm:text-xl md:text-3xl font-bold ml-2 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent"
+              className="font-sora text-base sm:text-xl md:text-3xl font-bold ml-2 bg-gradient-to-r from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent drop-shadow-[0_0_8px_rgba(168,85,247,0.7)]"
             >
               Thomas | Portfolio
             </Link>

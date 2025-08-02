@@ -8,7 +8,7 @@ const About = () => {
       className="about-section w-full h-auto pt-9 md:pt-14 bg-gradient-to-br from-gray-950 via-slate-950 to-black text-white sm:pl-10"
     >
       <div className="w-full px-2 max-w-6xl mx-auto">
-        <h2 className="title-night text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-10 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
+        <h2 className="font-sora text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-10 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
           About me
         </h2>
 
@@ -38,7 +38,12 @@ const About = () => {
                   À propos de moi
                 </h3>
                 <p className="text-gray-300 text-base leading-relaxed">
-                  Développeur web freelance spécialisé en React, Next.js et Tailwind CSS, j’accompagne les entrepreneurs, PME et indépendants dans la création de sites web modernes, performants et sur-mesure. Passionné par l’UI/UX, je mets un point d’honneur à concevoir des interfaces intuitives et attractives.
+                  Développeur web freelance spécialisé en React, Next.js et
+                  Tailwind CSS, j’accompagne les entrepreneurs, PME et
+                  indépendants dans la création de sites web modernes,
+                  performants et sur-mesure. Passionné par l’UI/UX, je mets un
+                  point d’honneur à concevoir des interfaces intuitives et
+                  attractives.
                 </p>
               </div>
 
@@ -48,9 +53,18 @@ const About = () => {
                   Mes services
                 </h3>
                 <p className="text-gray-300 text-base leading-relaxed">
-                  Je réalise des sites vitrines professionnels, optimisés pour le référencement et adaptés à tous les supports (responsive design).<br/>
-                  <span className="text-purple-400 font-medium bg-purple-400/10 px-2 py-1 rounded">Technologies principales :</span> React, Next.js, Tailwind CSS, HTML5, CSS3, JavaScript.<br/>
-                  Je peux également intervenir sur la refonte de sites existants, l’optimisation des performances et l’intégration de maquettes Figma.
+                  Je réalise des sites vitrines professionnels, optimisés pour
+                  le référencement et adaptés à tous les supports (responsive
+                  design).
+                  <br />
+                  <span className="text-purple-400 font-medium bg-purple-400/10 px-2 py-1 rounded">
+                    Technologies principales :
+                  </span>{" "}
+                  React, Next.js, Tailwind CSS, HTML5, CSS3, JavaScript.
+                  <br />
+                  Je peux également intervenir sur la refonte de sites
+                  existants, l’optimisation des performances et l’intégration de
+                  maquettes Figma.
                 </p>
               </div>
 
@@ -60,13 +74,19 @@ const About = () => {
                   Pourquoi créer un site vitrine ?
                 </h3>
                 <p className="text-gray-300 text-base leading-relaxed">
-                  Un site vitrine est la première vitrine digitale de votre activité. Il permet de :<br/>
-                  – Présenter vos services et votre expertise<br/>
-                  – Gagner en visibilité et crédibilité<br/>
-                  – Attirer de nouveaux clients grâce à un design professionnel<br/>
-                  – Être accessible 24/7 sur tous les appareils<br/>
-                  <br/>
-                  Investir dans un site vitrine, c’est investir dans la croissance de votre activité.
+                  Un site vitrine est la première vitrine digitale de votre
+                  activité. Il permet de :<br />
+                  – Présenter vos services et votre expertise
+                  <br />
+                  – Gagner en visibilité et crédibilité
+                  <br />
+                  – Attirer de nouveaux clients grâce à un design professionnel
+                  <br />
+                  – Être accessible 24/7 sur tous les appareils
+                  <br />
+                  <br />
+                  Investir dans un site vitrine, c’est investir dans la
+                  croissance de votre activité.
                 </p>
               </div>
             </div>

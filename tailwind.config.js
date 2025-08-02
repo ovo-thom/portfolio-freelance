@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        pixelify: ['"Pixelify Sans"', "sans-serif"],
+        // pixelify: ['"Pixelify Sans"', "sans-serif"],
+        sora: ['Sora', 'ui-sans-serif', 'system-ui'],
       },
     },
   },

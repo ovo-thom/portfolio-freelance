@@ -7,6 +7,7 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import ProjectsPage from "./components/ProjectsPage";
 import ProjectList from "./components/ProjectList";
+import ProcessSection from "./components/ProcessSection";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
             <>
               <Hero />
               <About />
-              <Projects />
+                <ProcessSection />
+                <Projects />
               <Contact />
             </>
           }

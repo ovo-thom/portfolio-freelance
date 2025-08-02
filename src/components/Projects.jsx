@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import homepage from "../assets/popcornmovie/homepage_popcornmovie.png";
 import headphones from "../images/Headphones.png";
 import lifestyle from "../images/lifestyle.png";
-import doml from "../assets/doml/templateDoml.png"
+import doml from "../assets/doml/templateDoml.png";
 
 import { EffectCube, Pagination } from "swiper/modules";
 
@@ -52,7 +52,7 @@ export default function Projects() {
 
       <section id="projects" className="project w-full">
         <div className="max-w-7xl mx-auto w-full">
-          <h2 className="title-night text-center text-3xl sm:text-3xl lg:text-5xl sm:my-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent leading-relaxed py-2">
+          <h2 className="font-sora text-center text-3xl sm:text-3xl lg:text-5xl sm:my-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent leading-relaxed py-2">
             My Projects
           </h2>
           <div className="w-full flex flex-col md:items-center lg:flex-row">
@@ -86,7 +86,13 @@ export default function Projects() {
                   <span className="italic font-light text-blue-600 ">
                     Doml :
                   </span>{" "}
-                  Doml est un site vitrine moderne développé avec Next.js et Tailwind CSS, conçu pour mettre en avant une expérience utilisateur soignée et professionnelle. Le projet se distingue par un design fidèle à la maquette Figma d’origine, une interface responsive adaptée aux écrans mobile et desktop, et l’utilisation de composants réutilisables pour une structure de code claire et évolutive.
+                  Doml est un site vitrine moderne développé avec Next.js et
+                  Tailwind CSS, conçu pour mettre en avant une expérience
+                  utilisateur soignée et professionnelle. Le projet se distingue
+                  par un design fidèle à la maquette Figma d’origine, une
+                  interface responsive adaptée aux écrans mobile et desktop, et
+                  l’utilisation de composants réutilisables pour une structure
+                  de code claire et évolutive.
                 </p>
                 <Link
                   to="/projects/5"
