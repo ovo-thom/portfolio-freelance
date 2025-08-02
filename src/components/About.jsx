@@ -9,7 +9,7 @@ const About = () => {
     >
       <div className="w-full px-2 max-w-6xl mx-auto">
         <h2 className="font-sora text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-10 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
-          About me
+          À propos
         </h2>
 
         <div className="flex flex-col lg:flex-row items-center">

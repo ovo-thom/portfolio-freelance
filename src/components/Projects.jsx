@@ -52,8 +52,8 @@ export default function Projects() {
 
       <section id="projects" className="project w-full">
         <div className="max-w-7xl mx-auto w-full">
-          <h2 className="font-sora text-center text-3xl sm:text-3xl lg:text-5xl sm:my-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent leading-relaxed py-2">
-            My Projects
+          <h2 className="font-sora text-center text-3xl sm:text-3xl lg:text-5xl sm:my-10 font-extrabold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent leading-relaxed py-2">
+            Mes projets
           </h2>
           <div className="w-full flex flex-col md:items-center lg:flex-row">
             <div className="project-description text-xl lg:w-1/2 px-5">

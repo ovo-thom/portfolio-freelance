@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link
               to="/"
-              className="font-sora text-base sm:text-xl md:text-3xl font-bold ml-2 bg-gradient-to-r from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent drop-shadow-[0_0_8px_rgba(168,85,247,0.7)]"
+              className="font-sora text-base sm:text-xl md:text-2xl font-bold ml-2 bg-gradient-to-r from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent drop-shadow-[0_0_8px_rgba(168,85,247,0.7)]"
             >
               Thomas | Portfolio
             </Link>
@@ -55,29 +55,29 @@ const Navbar = () => {
               duration={500}
               className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
             >
-              About
+              À propos
             </ScrollLink>
             <ScrollLink
-              to="skills"
+              to="process"
               smooth={true}
               duration={500}
-              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
+              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-green-400 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
             >
-              Skills
+              Processus
             </ScrollLink>
             <ScrollLink
               to="projects"
               smooth={true}
               duration={500}
-              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
+              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-purple-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
             >
-              Projects
+              Mes projets
             </ScrollLink>
             <ScrollLink
               to="contact"
               smooth={true}
               duration={500}
-              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
+              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
             >
               Contact
             </ScrollLink>
@@ -121,16 +121,16 @@ const Navbar = () => {
               onClick={toggleMenu}
               className="hover:underline py-2 border-b border-b-blue-500 w-full text-center"
             >
-              About
+              À propos
             </ScrollLink>
             <ScrollLink
-              to="skills"
+              to="process"
               smooth={true}
               duration={500}
               onClick={toggleMenu}
-              className="hover:underline py-2 w-full border-b border-b-purple-500 text-center"
+              className="hover:underline py-2 w-full border-b border-b-green-400 text-center"
             >
-              Skills
+              Processus
             </ScrollLink>
             <ScrollLink
               to="projects"
@@ -139,7 +139,7 @@ const Navbar = () => {
               onClick={toggleMenu}
               className="hover:underline py-2 w-full border-b border-b-pink-500 text-center"
             >
-              Projects
+              Mes projets
             </ScrollLink>
             <ScrollLink
               to="contact"
