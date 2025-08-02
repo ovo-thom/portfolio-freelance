@@ -35,51 +35,38 @@ const About = () => {
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
                 <h3 className="text-lg sm:text-xl md:text-2xl mb-4 font-semibold text-white flex items-center">
                   <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
-                  Objectif professionnel
+                  À propos de moi
                 </h3>
                 <p className="text-gray-300 text-base leading-relaxed">
-                  Développeur web front-end junior spécialisé en React, Nextjs
-                  et Tailwind CSS,{" "}
-                  <span className="text-blue-400 font-medium bg-blue-400/10 px-2 py-1 rounded">
-                    je suis actuellement à la recherche d&apos;un poste
-                  </span>{" "}
-                  où je pourrai mettre à profit mes compétences tout en
-                  continuant à évoluer dans un environnement dynamique.
-                  Enthousiaste à l&apos;idée de rejoindre une équipe dynamique,
-                  j&apos;ai à cœur de partager mes idées, d&apos;apprendre de
-                  mes collègues et de contribuer à une atmosphère de travail
-                  positive.
+                  Développeur web freelance spécialisé en React, Next.js et Tailwind CSS, j’accompagne les entrepreneurs, PME et indépendants dans la création de sites web modernes, performants et sur-mesure. Passionné par l’UI/UX, je mets un point d’honneur à concevoir des interfaces intuitives et attractives.
                 </p>
               </div>
 
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
                 <h3 className="text-lg sm:text-xl md:text-2xl mb-4 font-semibold text-white flex items-center">
                   <span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
-                  Compétences et formation
+                  Mes services
                 </h3>
                 <p className="text-gray-300 text-base leading-relaxed">
-                  Diplômé de BeCode, j&apos;ai développé une expertise en
-                  front-end grâce à une pédagogie active favorisant
-                  l&apos;autonomie et la collaboration. J&apos;ai maîtrisé des
-                  technologies comme HTML, CSS, JavaScript ainsi que React, et
-                  réalisé un projet de site e-commerce intégrant des
-                  fonctionnalités modernes et responsive.
+                  Je réalise des sites vitrines professionnels, optimisés pour le référencement et adaptés à tous les supports (responsive design).<br/>
+                  <span className="text-purple-400 font-medium bg-purple-400/10 px-2 py-1 rounded">Technologies principales :</span> React, Next.js, Tailwind CSS, HTML5, CSS3, JavaScript.<br/>
+                  Je peux également intervenir sur la refonte de sites existants, l’optimisation des performances et l’intégration de maquettes Figma.
                 </p>
               </div>
 
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
                 <h3 className="text-lg sm:text-xl md:text-2xl mb-4 font-semibold text-white flex items-center">
                   <span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>
-                  Expérience professionnelle
+                  Pourquoi créer un site vitrine ?
                 </h3>
                 <p className="text-gray-300 text-base leading-relaxed">
-                  Lors de mon stage chez Pixel Drive, j&apos;ai contribué au
-                  développement de Progressive Web Apps en utilisant des
-                  concepts avancés comme les server components et server
-                  actions. J&apos;ai intégré des projets Next.js avec
-                  internationalisation et conçu des maquettes responsive. La
-                  gestion des versions et le travail collaboratif se faisaient
-                  avec Git et GitHub.
+                  Un site vitrine est la première vitrine digitale de votre activité. Il permet de :<br/>
+                  – Présenter vos services et votre expertise<br/>
+                  – Gagner en visibilité et crédibilité<br/>
+                  – Attirer de nouveaux clients grâce à un design professionnel<br/>
+                  – Être accessible 24/7 sur tous les appareils<br/>
+                  <br/>
+                  Investir dans un site vitrine, c’est investir dans la croissance de votre activité.
                 </p>
               </div>
             </div>
