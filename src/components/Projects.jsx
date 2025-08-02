@@ -7,9 +7,9 @@ import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
 import homepage from "../assets/popcornmovie/homepage_popcornmovie.png";
-import craftifyHome from "../images/craftify-home.png";
 import headphones from "../images/Headphones.png";
 import lifestyle from "../images/lifestyle.png";
+import doml from "../assets/doml/templateDoml.png"
 
 import { EffectCube, Pagination } from "swiper/modules";
 
@@ -80,26 +80,20 @@ export default function Projects() {
               </div>
               <div className="py-3 mb-4 rounded-lg">
                 <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
-                  Craftify
+                  Doml
                 </h2>
                 <p className="mb-4 text-gray-100 text-base">
                   <span className="italic font-light text-blue-600 ">
-                    Craftify :
+                    Doml :
                   </span>{" "}
-                  Premier projet réalisé en équipe dans le cadre de ma formation
-                  chez BeCode. Il s’agit d’un site e-commerce dédié aux
-                  artisans, développé avec React et Vite pour le front-end. Le
-                  site intègre des fonctionnalités essentielles telles que la
-                  gestion du panier, les filtres de produits et une navigation
-                  fluide.
+                  Doml est un site vitrine moderne développé avec Next.js et Tailwind CSS, conçu pour mettre en avant une expérience utilisateur soignée et professionnelle. Le projet se distingue par un design fidèle à la maquette Figma d’origine, une interface responsive adaptée aux écrans mobile et desktop, et l’utilisation de composants réutilisables pour une structure de code claire et évolutive.
                 </p>
-                <a
-                  href="https://craftify-project.myportfolio.com/"
-                  target="_blank"
+                <Link
+                  to="/projects/5"
                   className="text-gray-200 hover:text-white duration-300 border border-gray-600 hover:border-gray-400 px-3 py-1 rounded-md text-sm"
                 >
-                  → Portfolio du projet
-                </a>
+                  → Voir le projet en détail
+                </Link>
               </div>
 
               <div className="py-3 mb-4 rounded-lg">
@@ -167,10 +161,10 @@ export default function Projects() {
                   <SwiperSlide className="flex justify-center items-center w-full h-full">
                     <div className="w-full h-full flex justify-center items-center">
                       <img
-                        src={craftifyHome}
+                        src={doml}
                         alt="Craftify Home"
                         className="w-full h-full object-cover object-top cursor-pointer"
-                        onClick={() => openModal(craftifyHome)}
+                        onClick={() => openModal(doml)}
                       />
                     </div>
                   </SwiperSlide>
