@@ -6,7 +6,7 @@ const steps = [
   },
   {
     title: "Analyse & étude de la maquette",
-    desc: "Vous fournissez une maquette (Figma, Adobe XD, etc.) ou un cahier des charges détaillé. Je vérifie la faisabilité technique et propose, si besoin, des ajustements pour optimiser l’expérience utilisateur.",
+    desc: "Vous fournissez la maquette de votre site (Figma, Adobe XD, etc.). Je vérifie la faisabilité technique et propose, si besoin, des ajustements pour optimiser l’expérience utilisateur.",
     color: "bg-blue-400",
   },
   {
@@ -37,12 +37,12 @@ const ProcessSection = () => {
           Mon processus de travail
         </h2>
         <ol className="space-y-6">
-          {steps.map((step, idx) => (
-            <li key={idx} className="flex items-start space-x-4">
+          {steps.map((step, id) => (
+            <li key={id} className="flex items-start space-x-4">
               <span
                 className={`flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full text-black font-bold text-lg shadow-md ${step.color}`}
               >
-                {idx + 1}
+                {id + 1}
               </span>
               <div className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 w-full">
                 <div className="font-semibold text-white text-lg mb-1">
