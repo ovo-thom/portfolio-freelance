@@ -16,10 +16,10 @@ const Hero = () => {
       <div className="relative w-full flex flex-col md:flex-row md:h-[35%] items-center justify-evenly md:pl-12 p-4">
         <div className="absolute inset-0 md:bg-black md:opacity-60"></div>
         <div className="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center justify-evenly">
-          <div className="flex flex-col items-center md:items-start text-center md:text-left sm:mt-10 md:mt-0 mb-8 md:mb-0 z-10">
-            <h1 className="text-2xl text-white sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-6 md:mb-8 font-semibold">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left mt-10 sm:mt-10 md:mt-0 mb-8 md:mb-0 z-10">
+            <h1 className="text-2xl text-white sm:text-2xl md:text-2xl lg:text-4xl mb-4 sm:mb-6 md:mb-8 font-semibold">
               <DecryptedText
-                text="Bonjour je suis Thomas"
+                text="Thomas — Développeur Web Freelance"
                 speed={100}
                 maxIterations={20}
                 animateOn="view"
@@ -28,8 +28,11 @@ const Hero = () => {
                 repeatInterval={8000}
               />
             </h1>
-            <p className="text-gray-300 text-lg sm:text-xl md:text-xl font-light lg:text-2xl">
-              Développeur Web Front-End Junior
+            <p className="text-gray-300 text-lg sm:text-xl md:text-xl font-light lg:text-2xl mb-2">
+              Spécialisé React, Next.js & Tailwind CSS
+            </p>
+            <p className="text-gray-400 text-base sm:text-lg md:text-lg font-light lg:text-xl">
+              Création de sites vitrines modernes & performants
             </p>
           </div>
           <div className="relative z-30 flex justify-center items-center md:mt-0 mt-6">
